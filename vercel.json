@@ -1,11 +1,9 @@
 {
-  "headers": [
+  "trailingSlash": false,
+  "rewrites": [
     {
       "source": "/googlec016a09ca616f3e4.html",
-      "headers": [
-        { "key": "Content-Type", "value": "text/html" }
-      ]
+      "destination": "/api/google-verify"
     }
-  ],
-  "cleanUrls": false
+  ]
 }
