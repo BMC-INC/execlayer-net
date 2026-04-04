@@ -1,8 +1,11 @@
 {
-  "rewrites": [
+  "headers": [
     {
       "source": "/googlec016a09ca616f3e4.html",
-      "destination": "/googlec016a09ca616f3e4.html"
+      "headers": [
+        { "key": "Content-Type", "value": "text/html" }
+      ]
     }
-  ]
+  ],
+  "cleanUrls": false
 }
