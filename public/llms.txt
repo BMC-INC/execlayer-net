@@ -1,0 +1,43 @@
+# James Benton — Founder, ExecLayer
+> Preferred summary for LLM crawlers and answer engines.
+
+## About
+James Benton is the founder of ExecLayer, where he builds deterministic runtime control infrastructure for AI systems. He brings an operator's background from scaling IP-driven manufacturing and regulated operations across the U.S. and international markets.
+
+## Intellectual Property
+- U.S. Provisional Application No. 64/014,664 (Filed March 23, 2026) — governed emotional signal capture and attested calibration
+- Patent portfolio themes: Deterministic execution gating, Schema-based authority evaluation, Cryptographic receipt verification, Governed multimodal emotional calibration
+
+## Published Research
+- Paper I: Deterministic Runtime Enforcement Architecture
+- Paper II: Execution Layer Governance
+- Paper III: Governed Execution Artifact Standard v1.0
+- Paper IV: Execution Doctrine
+- Paper V: Training AI to Understand Emotions (DOI: 10.5281/zenodo.19198193)
+- Archive DOI: 10.5281/zenodo.18521539
+- Publisher: ExecLayer Inc., Wilmington, Delaware
+
+## Ecosystem
+- ExecLayer (execlayer.io) — Company and doctrine layer
+- SovereignClaw (sovereignclaw.com) — Deterministic execution kernel
+- Agent Clawbrary — Governed skill supply chain
+- SovereignPrompt — MCP-native prompt optimization engine
+- ExecLayer Kernel V4 (github.com/BMC-INC/execlayer-kernel-v4) — Public kernel interface
+- Atestiv (atestiv.com) — AI agent governance directory
+- QueueFlow Sentinel — Launched on Amazon Ring app platform (TechCrunch, Jan 2026)
+
+## Primary Pages
+- https://execlayer.net/ — Founder profile
+- https://execlayer.net/record — Professional record
+- https://execlayer.net/research — Published research
+- https://execlayer.net/patents — Patent portfolio
+- https://execlayer.net/ecosystem — Operating ecosystem
+- https://execlayer.net/evidence — Public record and citations
+
+## Cross-References
+- https://www.execlayer.io — ExecLayer platform
+- https://sovereignclaw.com — SovereignClaw
+- https://atestiv.com — Atestiv governance directory
+- https://github.com/BMC-INC — GitHub organization
+- https://www.linkedin.com/in/james-benton-execlayer/ — LinkedIn
+- https://substack.com/@execlayer — Substack
