@@ -63,7 +63,8 @@ export const ecosystemProjects = [
 
 export const evidenceLinks = [
   { title: "TechCrunch", description: "QueueFlow Sentinel featured in TechCrunch coverage of Ring's app platform launch.", href: "https://techcrunch.com/2026/03/31/ring-app-store-bets-on-ai-to-go-beyond-home-security/" },
-  { title: "ExecLayer PR", description: "Official press announcement: patent-pending generative operations platform for enterprise.", href: "https://www.pr.com/press-release/957387/execlayer-launches-patent-pending-generative-ops-platform-for-enterprise-operations" },
+  { title: "ExecLayer PR", description: "Official press announcement: patent-pending generative operations platform for enterprise.", href: "https://www.pr.com/press-release/957387" },
+  { title: "Crunchbase", description: "Company profile covering ExecLayer's public organization record and business identity.", href: "https://www.crunchbase.com/organization/execlayer" },
   { title: "Britannia / RST", description: "Public disclosure of Master Services Agreement for international regulatory-compliant ingredient supply.", href: "https://www.newsfilecorp.com/release/110456/Britannia-Secures-Agreement-with-RST-to-Supply-UK-CBD-Market" },
   { title: "ASTM D37 Committee", description: "Official ASTM International committee page for consensus standards in regulated product safety and testing.", href: "https://www.astm.org/committees/d37.html" },
   { title: "Zenodo Publication Archive", description: "DOI-registered publication archive for the ExecLayer foundational research series.", href: "https://zenodo.org/records/18521539" },
