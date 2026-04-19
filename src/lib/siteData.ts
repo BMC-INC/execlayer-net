@@ -58,11 +58,11 @@ export const ecosystemProjects = [
   { label: "Prompt optimization engine", title: "SovereignPrompt", href: "https://sovereignclaw.com/sovereign-prompt", summary: "An MCP-native prompt optimization engine built in Rust for local prompt analysis and signed audit trails." },
   { label: "Public kernel interface", title: "ExecLayer Kernel V4", href: "https://github.com/BMC-INC/execlayer-kernel-v4", summary: "The public V4 interface for exercising governance evaluation, blueprint generation, and receipt anchoring." },
   { label: "AI agent governance directory", title: "Atestiv", href: "https://atestiv.com", summary: "The governance credentialing directory for verified AI agents with trust badges from the Agent Clawbrary catalog." },
-  { label: "Launched on Amazon Ring app platform", title: "QueueFlow Sentinel", href: "https://techcrunch.com/2026/01/06/amazons-ring-doorbells-get-fire-alerts-an-app-store-and-new-sensors/", summary: "Security monitoring application launched on the Amazon Ring app platform. Featured in TechCrunch coverage of Ring's app store launch." },
+  { label: "Launched on Amazon Ring app platform", title: "QueueFlow Sentinel", href: "https://techcrunch.com/2026/03/31/ring-app-store-bets-on-ai-to-go-beyond-home-security/", summary: "Security monitoring application launched on the Amazon Ring app platform. Featured in TechCrunch coverage of Ring's app store launch." },
 ];
 
 export const evidenceLinks = [
-  { title: "TechCrunch", description: "QueueFlow Sentinel featured in TechCrunch coverage of Amazon Ring's app platform launch.", href: "https://techcrunch.com/2026/01/06/amazons-ring-doorbells-get-fire-alerts-an-app-store-and-new-sensors/" },
+  { title: "TechCrunch", description: "QueueFlow Sentinel featured in TechCrunch coverage of Ring's app platform launch.", href: "https://techcrunch.com/2026/03/31/ring-app-store-bets-on-ai-to-go-beyond-home-security/" },
   { title: "ExecLayer PR", description: "Official press announcement: patent-pending generative operations platform for enterprise.", href: "https://www.pr.com/press-release/957387/execlayer-launches-patent-pending-generative-ops-platform-for-enterprise-operations" },
   { title: "Britannia / RST", description: "Public disclosure of Master Services Agreement for international regulatory-compliant ingredient supply.", href: "https://www.newsfilecorp.com/release/110456/Britannia-Secures-Agreement-with-RST-to-Supply-UK-CBD-Market" },
   { title: "ASTM D37 Committee", description: "Official ASTM International committee page for consensus standards in regulated product safety and testing.", href: "https://www.astm.org/committees/d37.html" },
