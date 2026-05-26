@@ -43,6 +43,14 @@ const sections = [
     ],
   },
   {
+    title: "Standards Body Participation",
+    occupation: "International Standards Participant",
+    items: [
+      "ASTM D37 committee member — U.S. consensus standards for regulated product safety and testing.",
+      "CEN-CENELEC JTC 21 participant via UNE nomination. Drafting harmonized standards for the EU AI Act. First board meeting May 26, 2026.",
+    ],
+  },
+  {
     title: "Regulated Manufacturing & International Compliance",
     occupation: "Co-Founder, Remediation Sciences & Technology",
     items: [

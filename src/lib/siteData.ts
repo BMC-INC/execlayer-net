@@ -4,6 +4,7 @@ export const founder = {
   linkedin: "https://www.linkedin.com/in/james-benton-execlayer/",
   github: "https://github.com/BMC-INC",
   substack: "https://substack.com/@execlayer",
+  twitter: "https://x.com/JamesBentonArc",
   url: "https://execlayer.net",
 };
 
@@ -22,6 +23,19 @@ export const latestWhitePaper = {
   href: "https://doi.org/10.5281/zenodo.19198193",
 };
 
+export const paperSix = {
+  label: "Paper VI",
+  title: "The Agentic Governance Benchmark",
+  summary: "A standardized framework for measuring runtime governance enforcement in autonomous AI systems. Six dimensions, five maturity tiers.",
+  status: "Zenodo publication pending.",
+};
+
+export const ssrnPublication = {
+  abstractId: "6290760",
+  distributionDate: "April 8, 2026",
+  href: "https://ssrn.com/abstract=6290760",
+};
+
 export const foundationalArchive = {
   version: "v1.0.1",
   publisher: "ExecLayer Inc., Wilmington, Delaware, United States",
@@ -32,33 +46,70 @@ export const foundationalArchive = {
   releaseDate: "March 2026",
 };
 
-export const filedPatent = {
-  title: "U.S. Provisional Application No. 64/014,664",
-  filing: "Filed March 23, 2026",
-  summary: "Publicly disclosed alongside Paper V as the patent filing tied to governed emotional signal capture and attested calibration for language model alignment.",
-  focusAreas: [
-    "Four-channel emotional signal capture",
-    "Dual-axis weighting for reasoning quality and emotional salience",
-    "Persistent emotional memory with Bayesian belief updates",
-    "Cryptographic attestation across the calibration trajectory",
-  ],
-};
+export const filedPatents = [
+  {
+    number: 1,
+    title: "U.S. Provisional Application No. 63/901,870",
+    name: "PartsGenie Voice Kiosk",
+    filing: "Filed October 20, 2025",
+    summary: "Voice-driven parts retrieval kiosk architecture for industrial and retail counter operations.",
+  },
+  {
+    number: 2,
+    title: "U.S. Provisional Application No. 63/952,140",
+    name: "GenOps / Blueprint Protocol",
+    filing: "Filed December 31, 2025",
+    summary: "Generative operations runtime and blueprint protocol for deterministic, sandboxed AI execution.",
+  },
+  {
+    number: 3,
+    title: "U.S. Provisional Application No. 63/983,308",
+    name: "DetGate (Deterministic Execution-Bound Governance)",
+    filing: "Filed February 14, 2026",
+    summary: "Deterministic execution-bound governance gating for fail-closed enforcement of AI-driven actions.",
+  },
+  {
+    number: 4,
+    title: "U.S. Provisional Application No. 64/014,664",
+    name: "Emotional Signal Capture",
+    filing: "Filed March 23, 2026",
+    summary: "Publicly disclosed alongside Paper V as the patent filing tied to governed emotional signal capture and attested calibration for language model alignment.",
+    focusAreas: [
+      "Four-channel emotional signal capture",
+      "Dual-axis weighting for reasoning quality and emotional salience",
+      "Persistent emotional memory with Bayesian belief updates",
+      "Cryptographic attestation across the calibration trajectory",
+    ],
+  },
+  {
+    number: 5,
+    title: "U.S. Provisional Application No. 64/069,063",
+    name: "SovereignGate",
+    filing: "Filed May 19, 2026",
+    summary: "XRPL-native governance enforcement for autonomous financial actors. Deterministic gating bound to ledger settlement.",
+  },
+];
 
 export const patentPortfolioThemes = [
   "Deterministic execution gating",
   "Schema-based authority evaluation",
   "Cryptographic receipt verification",
   "Governed multimodal emotional calibration",
+  "XRPL-native governance enforcement for autonomous financial actors",
 ];
 
 export const ecosystemProjects = [
   { label: "Company and doctrine layer", title: "ExecLayer", href: "https://www.execlayer.io", summary: "The company, research surface, and public doctrine layer for execution authority in AI systems." },
   { label: "Deterministic execution kernel", title: "SovereignClaw", href: "https://sovereignclaw.com", summary: "The operational software surface positioned as the deterministic execution kernel for enterprise AI." },
+  { label: "XRPL-native governance enforcement", title: "SovereignGate", href: "https://github.com/BMC-INC", summary: "Deterministic governance enforcement for autonomous actors on XRPL. Six-crate Rust workspace, 253 tests. Patent #5 filed May 2026." },
   { label: "Governed skill supply chain", title: "Agent Clawbrary", href: "https://sovereignclaw.com/clawbrary", summary: "A receipt-backed catalog that crawls, evaluates, signs, and publishes governed skill bundles." },
   { label: "Prompt optimization engine", title: "SovereignPrompt", href: "https://sovereignclaw.com/sovereign-prompt", summary: "An MCP-native prompt optimization engine built in Rust for local prompt analysis and signed audit trails." },
   { label: "Public kernel interface", title: "ExecLayer Kernel V4", href: "https://github.com/BMC-INC/execlayer-kernel-v4", summary: "The public V4 interface for exercising governance evaluation, blueprint generation, and receipt anchoring." },
   { label: "AI agent governance directory", title: "Atestiv", href: "https://atestiv.com", summary: "The governance credentialing directory for verified AI agents with trust badges from the Agent Clawbrary catalog." },
   { label: "Launched on Amazon Ring app platform", title: "QueueFlow Sentinel", href: "https://techcrunch.com/2026/03/31/ring-app-store-bets-on-ai-to-go-beyond-home-security/", summary: "Security monitoring application launched on the Amazon Ring app platform. Featured in TechCrunch coverage of Ring's app store launch." },
+  { label: "Public restaurant queue monitoring", title: "QueueFlow Lines", href: "https://github.com/BMC-INC", summary: "Public restaurant queue monitoring via Ring camera feeds. No app, no login, one-time email alert. Launching Q2 2026." },
+  { label: "AI context persistence", title: "IronMem", href: "https://github.com/BMC-INC/Iron-Mem", summary: "Rust-based AI context persistence for Claude Code. Open source." },
+  { label: "Governance measurement standard", title: "The Agentic Governance Benchmark", href: "https://execlayer.net/research", summary: "The first standardized scoring framework for measuring runtime AI governance enforcement. Six dimensions, five maturity tiers. White paper pending Zenodo publication." },
 ];
 
 export const evidenceLinks = [

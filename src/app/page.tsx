@@ -11,10 +11,10 @@ export default function Home() {
 
       <p className="text-[var(--color-muted)] text-lg leading-relaxed mb-6">
         My career spans regulatory policy formation, ASTM standards governance,
-        international compliance, applied science, and deterministic runtime
-        enforcement for AI systems. I have operated across highly regulated
-        industries where judgment preceded precedent and where the cost of
-        noncompliance was existential.
+        CEN-CENELEC JTC 21 participation, international compliance, applied
+        science, and deterministic runtime enforcement for AI systems. I have
+        operated across highly regulated industries where judgment preceded
+        precedent and where the cost of noncompliance was existential.
       </p>
 
       <p className="text-[var(--color-muted)] text-lg leading-relaxed mb-12">
@@ -40,6 +40,9 @@ export default function Home() {
             <ExternalLink href={founder.substack}>Substack</ExternalLink>
           </li>
           <li>
+            <ExternalLink href={founder.twitter}>X (@JamesBentonArc)</ExternalLink>
+          </li>
+          <li>
             <ExternalLink href={founder.github}>GitHub</ExternalLink>
           </li>
         </ul>
@@ -52,7 +55,7 @@ export default function Home() {
           name: founder.name,
           jobTitle: founder.jobTitle,
           url: founder.url,
-          sameAs: [founder.linkedin, founder.github, founder.substack],
+          sameAs: [founder.linkedin, founder.github, founder.substack, founder.twitter],
           knowsAbout: [
             "AI Governance",
             "Runtime Enforcement",

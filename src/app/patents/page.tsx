@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
-import { filedPatent, patentPortfolioThemes } from "@/lib/siteData";
+import { filedPatents, patentPortfolioThemes } from "@/lib/siteData";
 
 export const metadata: Metadata = {
   title: "Patent Portfolio",
   description:
-    "Patent portfolio covering deterministic execution gating, governed emotional calibration, and AI runtime enforcement.",
+    "Patent portfolio covering deterministic execution gating, governed emotional calibration, XRPL-native governance, and AI runtime enforcement.",
   alternates: { canonical: "https://execlayer.net/patents" },
   openGraph: {
     title: "Patent Portfolio | James Benton",
     description:
-      "Patent portfolio covering deterministic execution gating, governed emotional calibration, and AI runtime enforcement.",
+      "Patent portfolio covering deterministic execution gating, governed emotional calibration, XRPL-native governance, and AI runtime enforcement.",
     url: "https://execlayer.net/patents",
     type: "website",
   },
@@ -18,8 +18,16 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Patent Portfolio | James Benton",
     description:
-      "Patent portfolio covering deterministic execution gating, governed emotional calibration, and AI runtime enforcement.",
+      "Patent portfolio covering deterministic execution gating, governed emotional calibration, XRPL-native governance, and AI runtime enforcement.",
   },
+};
+
+const patentDates: Record<number, string> = {
+  1: "2025-10-20",
+  2: "2025-12-31",
+  3: "2026-02-14",
+  4: "2026-03-23",
+  5: "2026-05-19",
 };
 
 export default function PatentsPage() {
@@ -29,32 +37,47 @@ export default function PatentsPage() {
         Patent Portfolio
       </h1>
 
-      {/* Filed Patent */}
+      {/* Filed Patents */}
       <section className="mb-14">
         <h2 className="font-[family-name:var(--font-display)] text-xl mb-6 text-[var(--color-foreground)]">
-          Filed Patent
+          Filed Patents
         </h2>
-        <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6">
-          <h3 className="font-[family-name:var(--font-display)] text-lg mb-1">
-            {filedPatent.title}
-          </h3>
-          <p className="text-sm text-[var(--color-accent)] mb-3">
-            {filedPatent.filing}
-          </p>
-          <p className="text-[var(--color-muted)] text-sm mb-4">
-            {filedPatent.summary}
-          </p>
-          <ul className="space-y-1.5 text-sm text-[var(--color-muted)]">
-            {filedPatent.focusAreas.map((area) => (
-              <li
-                key={area}
-                className="flex items-start gap-2"
-              >
-                <span className="text-[var(--color-border)] mt-1.5 block h-1.5 w-1.5 rounded-full bg-current flex-shrink-0" />
-                {area}
-              </li>
-            ))}
-          </ul>
+        <div className="space-y-4">
+          {filedPatents.map((patent) => (
+            <div
+              key={patent.number}
+              className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6"
+            >
+              <p className="text-xs uppercase tracking-widest text-[var(--color-accent)] mb-2">
+                Patent #{patent.number}
+              </p>
+              <h3 className="font-[family-name:var(--font-display)] text-lg mb-1">
+                {patent.name}
+              </h3>
+              <p className="text-sm text-[var(--color-foreground)] mb-1">
+                {patent.title}
+              </p>
+              <p className="text-sm text-[var(--color-accent)] mb-3">
+                {patent.filing}
+              </p>
+              <p className="text-[var(--color-muted)] text-sm mb-4">
+                {patent.summary}
+              </p>
+              {patent.focusAreas && (
+                <ul className="space-y-1.5 text-sm text-[var(--color-muted)]">
+                  {patent.focusAreas.map((area) => (
+                    <li
+                      key={area}
+                      className="flex items-start gap-2"
+                    >
+                      <span className="text-[var(--color-border)] mt-1.5 block h-1.5 w-1.5 rounded-full bg-current flex-shrink-0" />
+                      {area}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
         </div>
       </section>
 
@@ -75,17 +98,20 @@ export default function PatentsPage() {
         </div>
       </section>
 
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          additionalType: "Patent",
-          name: filedPatent.title,
-          dateCreated: "2026-03-23",
-          author: { "@type": "Person", name: "James Benton" },
-          description: filedPatent.summary,
-        }}
-      />
+      {filedPatents.map((patent) => (
+        <JsonLd
+          key={patent.number}
+          data={{
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            additionalType: "Patent",
+            name: `${patent.name} — ${patent.title}`,
+            dateCreated: patentDates[patent.number],
+            author: { "@type": "Person", name: "James Benton" },
+            description: patent.summary,
+          }}
+        />
+      ))}
     </main>
   );
 }

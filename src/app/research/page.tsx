@@ -4,6 +4,8 @@ import { ExternalLink } from "@/components/ExternalLink";
 import {
   researchSeries,
   latestWhitePaper,
+  paperSix,
+  ssrnPublication,
   foundationalArchive,
 } from "@/lib/siteData";
 
@@ -62,26 +64,42 @@ export default function ResearchPage() {
         </div>
       </section>
 
-      {/* Latest White Paper */}
+      {/* Latest White Papers */}
       <section className="mb-14">
         <h2 className="font-[family-name:var(--font-display)] text-xl mb-6 text-[var(--color-foreground)]">
-          Latest White Paper
+          Latest White Papers
         </h2>
-        <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6">
-          <p className="text-sm text-[var(--color-accent)] mb-1">
-            {latestWhitePaper.label}
-          </p>
-          <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
-            {latestWhitePaper.title}
-          </h3>
-          <p className="text-[var(--color-muted)] text-sm mb-3">
-            {latestWhitePaper.summary}
-          </p>
-          <p className="text-sm">
-            <ExternalLink href={latestWhitePaper.href}>
-              DOI: {latestWhitePaper.doi}
-            </ExternalLink>
-          </p>
+        <div className="space-y-4">
+          <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6">
+            <p className="text-sm text-[var(--color-accent)] mb-1">
+              {latestWhitePaper.label}
+            </p>
+            <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
+              {latestWhitePaper.title}
+            </h3>
+            <p className="text-[var(--color-muted)] text-sm mb-3">
+              {latestWhitePaper.summary}
+            </p>
+            <p className="text-sm">
+              <ExternalLink href={latestWhitePaper.href}>
+                DOI: {latestWhitePaper.doi}
+              </ExternalLink>
+            </p>
+          </div>
+          <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6">
+            <p className="text-sm text-[var(--color-accent)] mb-1">
+              {paperSix.label}
+            </p>
+            <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
+              {paperSix.title}
+            </h3>
+            <p className="text-[var(--color-muted)] text-sm mb-3">
+              {paperSix.summary}
+            </p>
+            <p className="text-xs text-[var(--color-muted)] opacity-70">
+              {paperSix.status}
+            </p>
+          </div>
         </div>
       </section>
 
@@ -124,9 +142,27 @@ export default function ResearchPage() {
         </div>
       </section>
 
-      <p className="text-xs text-[var(--color-muted)] opacity-70">
-        SSRN submission pending approval &mdash; not yet a published SSRN paper.
-      </p>
+      <section className="mb-10">
+        <h2 className="font-[family-name:var(--font-display)] text-xl mb-6 text-[var(--color-foreground)]">
+          SSRN Publication
+        </h2>
+        <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6 space-y-2 text-sm text-[var(--color-muted)]">
+          <p>
+            <span className="text-[var(--color-foreground)]">Abstract ID:</span>{" "}
+            {ssrnPublication.abstractId}
+          </p>
+          <p>
+            <span className="text-[var(--color-foreground)]">Distributed:</span>{" "}
+            {ssrnPublication.distributionDate}
+          </p>
+          <p>
+            <span className="text-[var(--color-foreground)]">Link:</span>{" "}
+            <ExternalLink href={ssrnPublication.href}>
+              {ssrnPublication.href}
+            </ExternalLink>
+          </p>
+        </div>
+      </section>
 
       {/* JSON-LD for all 5 papers */}
       {researchSeries.map((paper) => (
@@ -157,6 +193,34 @@ export default function ResearchPage() {
             name: "ExecLayer Inc.",
           },
           datePublished: "2026-03",
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ScholarlyArticle",
+          name: paperSix.title,
+          author: { "@type": "Person", name: "James Benton" },
+          publisher: {
+            "@type": "Organization",
+            name: "ExecLayer Inc.",
+          },
+          description: paperSix.summary,
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ScholarlyArticle",
+          name: "ExecLayer Foundational Research",
+          url: ssrnPublication.href,
+          author: { "@type": "Person", name: "James Benton" },
+          publisher: {
+            "@type": "Organization",
+            name: "SSRN",
+          },
+          identifier: ssrnPublication.abstractId,
+          datePublished: "2026-04-08",
         }}
       />
     </main>
