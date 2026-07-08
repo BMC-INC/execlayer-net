@@ -42,9 +42,11 @@ export default function EvidencePage() {
             <p className="mt-1 text-[var(--color-muted)]">
               {link.description}
             </p>
-            <div className="mt-2">
-              <ExternalLink href={link.href}>View source</ExternalLink>
-            </div>
+            {link.href && (
+              <div className="mt-2">
+                <ExternalLink href={link.href}>View source</ExternalLink>
+              </div>
+            )}
           </div>
         ))}
       </div>

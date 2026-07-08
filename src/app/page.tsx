@@ -10,11 +10,13 @@ export default function Home() {
       </h1>
 
       <p className="text-[var(--color-muted)] text-lg leading-relaxed mb-6">
-        My career spans regulatory policy formation, ASTM standards governance,
-        CEN-CENELEC JTC 21 participation, international compliance, applied
-        science, and deterministic runtime enforcement for AI systems. I have
-        operated across highly regulated industries where judgment preceded
-        precedent and where the cost of noncompliance was existential.
+        My career spans regulatory policy formation, international standards
+        governance, applied science, and deterministic runtime enforcement for
+        AI systems. I hold standards seats at ASTM (D37, F45), CEN-CENELEC JTC 21
+        (designated Technical Expert, WG2/WG3), and ISO/IEC JTC 1/SC 42 (observer
+        via UNE). I have operated across highly regulated industries where
+        judgment preceded precedent and where the cost of noncompliance was
+        existential.
       </p>
 
       <p className="text-[var(--color-muted)] text-lg leading-relaxed mb-12">
@@ -45,6 +47,9 @@ export default function Home() {
           <li>
             <ExternalLink href={founder.github}>GitHub</ExternalLink>
           </li>
+          <li>
+            <ExternalLink href={founder.orcid}>ORCID</ExternalLink>
+          </li>
         </ul>
       </div>
 
@@ -55,7 +60,7 @@ export default function Home() {
           name: founder.name,
           jobTitle: founder.jobTitle,
           url: founder.url,
-          sameAs: [founder.linkedin, founder.github, founder.substack, founder.twitter],
+          sameAs: [founder.linkedin, founder.github, founder.substack, founder.twitter, founder.orcid],
           knowsAbout: [
             "AI Governance",
             "Runtime Enforcement",

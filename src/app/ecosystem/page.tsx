@@ -6,19 +6,19 @@ import { ecosystemProjects } from "@/lib/siteData";
 export const metadata: Metadata = {
   title: "Ecosystem",
   description:
-    "The operating ecosystem behind ExecLayer — from runtime enforcement to governed skill supply chains.",
+    "The operating ecosystem behind ExecLayer, from runtime enforcement to governed skill supply chains.",
   alternates: { canonical: "https://execlayer.net/ecosystem" },
   openGraph: {
     title: "Ecosystem | James Benton",
     description:
-      "The operating ecosystem behind ExecLayer — from runtime enforcement to governed skill supply chains.",
+      "The operating ecosystem behind ExecLayer, from runtime enforcement to governed skill supply chains.",
     url: "https://execlayer.net/ecosystem",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ecosystem | James Benton",
     description:
-      "The operating ecosystem behind ExecLayer — from runtime enforcement to governed skill supply chains.",
+      "The operating ecosystem behind ExecLayer, from runtime enforcement to governed skill supply chains.",
   },
 };
 
@@ -29,7 +29,7 @@ export default function EcosystemPage() {
         Ecosystem
       </h1>
       <p className="mt-4 text-[var(--color-muted)]">
-        The operating ecosystem behind ExecLayer — from runtime enforcement to
+        The operating ecosystem behind ExecLayer, from runtime enforcement to
         governed skill supply chains.
       </p>
 

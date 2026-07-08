@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Patent Portfolio | James Benton",
     description:
-      "Patent portfolio covering deterministic execution gating, governed emotional calibration, XRPL-native governance, and AI runtime enforcement.",
+      "Six-patent portfolio covering deterministic execution gating, governed emotional calibration, XRPL-native governance, neural-interface enforcement, and AI runtime governance.",
     url: "https://execlayer.net/patents",
     type: "website",
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Patent Portfolio | James Benton",
     description:
-      "Patent portfolio covering deterministic execution gating, governed emotional calibration, XRPL-native governance, and AI runtime enforcement.",
+      "Six-patent portfolio covering deterministic execution gating, governed emotional calibration, XRPL-native governance, neural-interface enforcement, and AI runtime governance.",
   },
 };
 
@@ -28,6 +28,7 @@ const patentDates: Record<number, string> = {
   3: "2026-02-14",
   4: "2026-03-23",
   5: "2026-05-19",
+  6: "2026-06-25",
 };
 
 export default function PatentsPage() {
@@ -105,7 +106,7 @@ export default function PatentsPage() {
             "@context": "https://schema.org",
             "@type": "CreativeWork",
             additionalType: "Patent",
-            name: `${patent.name} — ${patent.title}`,
+            name: `${patent.name}: ${patent.title}`,
             dateCreated: patentDates[patent.number],
             author: { "@type": "Person", name: "James Benton" },
             description: patent.summary,
