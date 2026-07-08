@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Professional Record | James Benton",
     description:
-      "Career record spanning regulatory policy, ASTM standards governance, international compliance, and AI runtime enforcement.",
+      "Career record spanning regulatory policy, ASTM/CEN-CENELEC/ISO standards governance, international compliance, and AI runtime enforcement.",
     url: "https://execlayer.net/record",
     type: "profile",
   },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Professional Record | James Benton",
     description:
-      "Career record spanning regulatory policy, ASTM standards governance, international compliance, and AI runtime enforcement.",
+      "Career record spanning regulatory policy, ASTM/CEN-CENELEC/ISO standards governance, international compliance, and AI runtime enforcement.",
   },
 };
 
@@ -34,20 +34,14 @@ const sections = [
   },
   {
     title: "Standards and Governance",
-    occupation: "Standards Committee Member",
+    occupation: "International Standards Committee Member",
     items: [
       "ASTM D37 committee member.",
-      "Contribute to consensus standards for regulated product safety, quality, and testing.",
-      "Participate in standards that regulators rely on during enforcement and rulemaking.",
+      "ASTM F45 committee member (Robotics, Automation, and Autonomous Systems).",
+      "CEN-CENELEC JTC 21 designated Technical Expert (WG2/WG3) for European AI standards.",
+      "ISO/IEC JTC 1/SC 42 observer via UNE (CTN-UNE 71/SC 42) for international AI standards.",
+      "Contribute to consensus standards across regulated product safety, AI governance, and autonomous systems.",
       "Bridge between standards development and real-world manufacturing and compliance execution.",
-    ],
-  },
-  {
-    title: "Standards Body Participation",
-    occupation: "International Standards Participant",
-    items: [
-      "ASTM D37 committee member — U.S. consensus standards for regulated product safety and testing.",
-      "CEN-CENELEC JTC 21 participant via UNE nomination. Drafting harmonized standards for the EU AI Act. First board meeting May 26, 2026.",
     ],
   },
   {

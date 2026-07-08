@@ -4,7 +4,8 @@ import { ExternalLink } from "@/components/ExternalLink";
 import {
   researchSeries,
   latestWhitePaper,
-  paperSix,
+  latestPapers,
+  book,
   ssrnPublication,
   foundationalArchive,
 } from "@/lib/siteData";
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Published Research | James Benton",
     description:
-      "Foundational research series on deterministic runtime enforcement, governed execution, and AI governance infrastructure.",
+      "Published research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Eight papers, one book.",
     url: "https://execlayer.net/research",
     type: "website",
   },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Published Research | James Benton",
     description:
-      "Foundational research series on deterministic runtime enforcement, governed execution, and AI governance infrastructure.",
+      "Published research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Eight papers, one book.",
   },
 };
 
@@ -86,20 +87,45 @@ export default function ResearchPage() {
               </ExternalLink>
             </p>
           </div>
-          <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6">
-            <p className="text-sm text-[var(--color-accent)] mb-1">
-              {paperSix.label}
-            </p>
-            <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
-              {paperSix.title}
-            </h3>
-            <p className="text-[var(--color-muted)] text-sm mb-3">
-              {paperSix.summary}
-            </p>
-            <p className="text-xs text-[var(--color-muted)] opacity-70">
-              {paperSix.status}
-            </p>
-          </div>
+          {latestPapers.map((paper) => (
+            <div
+              key={paper.label}
+              className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6"
+            >
+              <p className="text-sm text-[var(--color-accent)] mb-1">
+                {paper.label}
+              </p>
+              <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
+                {paper.title}
+              </h3>
+              <p className="text-[var(--color-muted)] text-sm mb-3">
+                {paper.summary}
+              </p>
+              <p className="text-sm">
+                <ExternalLink href={paper.href}>
+                  DOI: {paper.doi}
+                </ExternalLink>
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Book */}
+      <section className="mb-14">
+        <h2 className="font-[family-name:var(--font-display)] text-xl mb-6 text-[var(--color-foreground)]">
+          Book
+        </h2>
+        <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6">
+          <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
+            {book.title}
+          </h3>
+          <p className="text-sm text-[var(--color-muted)] mb-1">
+            ISBN {book.isbn}
+          </p>
+          <p className="text-sm text-[var(--color-muted)]">
+            Published by {book.publisher}.
+          </p>
         </div>
       </section>
 
@@ -195,17 +221,35 @@ export default function ResearchPage() {
           datePublished: "2026-03",
         }}
       />
+      {latestPapers.map((paper) => (
+        <JsonLd
+          key={paper.label}
+          data={{
+            "@context": "https://schema.org",
+            "@type": "ScholarlyArticle",
+            name: paper.title,
+            url: paper.href,
+            author: { "@type": "Person", name: "James Benton" },
+            publisher: {
+              "@type": "Organization",
+              name: "ExecLayer Inc.",
+            },
+            description: paper.summary,
+            datePublished: paper.datePublished,
+          }}
+        />
+      ))}
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "ScholarlyArticle",
-          name: paperSix.title,
+          "@type": "Book",
+          name: book.title,
+          isbn: book.isbn,
           author: { "@type": "Person", name: "James Benton" },
           publisher: {
             "@type": "Organization",
-            name: "ExecLayer Inc.",
+            name: book.publisher,
           },
-          description: paperSix.summary,
         }}
       />
       <JsonLd

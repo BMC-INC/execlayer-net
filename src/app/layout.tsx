@@ -19,7 +19,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "James Benton — Founder, ExecLayer",
+    default: "James Benton, Founder of ExecLayer",
     template: "%s | James Benton",
   },
   description:
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://execlayer.net",
     siteName: "James Benton",
-    title: "James Benton — Founder, ExecLayer",
+    title: "James Benton, Founder of ExecLayer",
     description:
       "Founder of ExecLayer. Published research, patent portfolio, and operator background in AI governance and regulated industries.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "James Benton — Founder, ExecLayer",
+    title: "James Benton, Founder of ExecLayer",
     description:
       "Founder of ExecLayer. Published research, patent portfolio, and operator background in AI governance and regulated industries.",
   },
