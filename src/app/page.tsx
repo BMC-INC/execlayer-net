@@ -22,7 +22,7 @@ export default function Home() {
       <p className="text-[var(--color-muted)] text-lg leading-relaxed mb-12">
         I am now building{" "}
         <ExternalLink href="https://www.execlayer.io">ExecLayer</ExternalLink>
-        {" "}&mdash; deterministic runtime control infrastructure for AI systems.
+        , deterministic runtime control infrastructure for AI systems.
         Fail-closed execution gating, cryptographic receipt verification, and
         governed artifact standards for enterprise AI operations.
       </p>
