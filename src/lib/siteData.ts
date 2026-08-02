@@ -6,14 +6,63 @@ export const founder = {
   substack: "https://substack.com/@execlayer",
   twitter: "https://x.com/JamesBentonArc",
   orcid: "https://orcid.org/0009-0001-1947-1473",
+  amazon: "https://www.amazon.com/author/jamesbentonjr",
   url: "https://execlayer.net",
 };
 
+export const books = [
+  {
+    title: "Wired Different: How the ADHD Brain Uses AI to Build What Nobody Thought Possible",
+    summary: "Part memoir, part neuroscience, part field manual.",
+  },
+  {
+    title: "Elephants Over Unicorns",
+    summary: "The anti-unicorn business philosophy, written from the middle of building one, not from a podium after the exit.",
+  },
+  {
+    title: "The End of Probabilistic Governance: How to Build Deterministic AI Enforcement Infrastructure",
+    summary: "The technical thesis behind everything above: why guardrails that predict will always fail, and how to build enforcement that can't.",
+  },
+];
+
+export const recordSections = [
+  {
+    title: "Where I started",
+    occupation: "Healthcare Operations Leader",
+    body: "My first job in healthcare was cleaning floors. About 40 days later I was running my own building. Not because anyone handed it to me, but because I treated a mop closet like a business and someone noticed. That pattern, learn fast, take ownership before the title arrives, has repeated in every industry since. I eventually led operations with 200+ employees in healthcare facilities, the kind of environment where a missed detail is a citation and a citation is a career.",
+  },
+  {
+    title: "Regulatory policy formation",
+    occupation: "Regulatory Policy Advisor",
+    body: "I shaped policy at the city, county, and state level during the early market formation of highly regulated industries. I sat across the table from regulators, planning departments, and enforcement agencies, and represented industry during ordinance drafting when nobody knew yet what the rules should be. You learn more about governance in those rooms than in any framework document.",
+  },
+  {
+    title: "Standards and governance",
+    occupation: "International Standards Committee Member",
+    body: "ASTM committee member (D37 and F45). Designated Technical Expert at CEN-CENELEC JTC 21, WG2 and WG3. Observer at ISO/IEC JTC 1/SC 42 via UNE. I contribute to the consensus standards regulators lean on during enforcement and rulemaking, and I bring the manufacturing floor into rooms that are usually all policy.",
+  },
+  {
+    title: "Regulated manufacturing and international compliance",
+    occupation: "Co-Founder, Remediation Sciences & Technology",
+    body: "Co-founder of Remediation Sciences & Technology, PLLC, a B2B ingredient and technology provider. I executed UK and EU market access under fragmented national frameworks: cross-border documentation, strict regulatory thresholds, lab variance risk. Compliance across borders is a systems problem, and I treated it like one.",
+  },
+  {
+    title: "Applied science and formulation",
+    occupation: "Formulation Lead",
+    body: "Water-soluble formulations for regulated consumer products, built for dose uniformity, onset predictability, and stability, in collaboration with former pharmaceutical scientists from GW Pharmaceuticals. My position then is my position now: formulation is the first layer of compliance, not an afterthought.",
+  },
+  {
+    title: "High-risk brand and market execution",
+    occupation: "Regulatory & Compliance Lead",
+    body: "Regulatory and compliance leadership for high-visibility product launches under heightened enforcement scrutiny. Packaging, labeling, distribution. The brands survived because the compliance did.",
+  },
+];
+
 export const researchSeries = [
   { label: "Paper I", title: "Deterministic Runtime Enforcement Architecture", summary: "Defines the fail-closed runtime boundary between AI-generated intent and operational execution." },
-  { label: "Paper II", title: "Execution Layer Governance", summary: "Frames runtime control as a governance primitive rather than a logging or observability layer." },
-  { label: "Paper III", title: "Governed Execution Artifact Standard v1.0", summary: "Introduces the canonical artifact structure used for policy evaluation, authority, and traceability." },
-  { label: "Paper IV", title: "Execution Doctrine", summary: "Establishes the operational doctrine behind authority-bound execution for enterprise AI systems." },
+  { label: "Paper II", title: "Execution Layer Governance", summary: "Frames runtime control as a governance primitive, not a logging or observability layer." },
+  { label: "Paper III", title: "Governed Execution Artifact Standard v1.0", summary: "The canonical artifact structure for policy evaluation, authority, and traceability." },
+  { label: "Paper IV", title: "Execution Doctrine", summary: "The operational doctrine behind authority-bound execution for enterprise AI systems." },
 ];
 
 export const latestWhitePaper = {
@@ -28,7 +77,7 @@ export const latestPapers = [
   {
     label: "Paper VI",
     title: "SovereignGate: XRPL-Native Governance Enforcement",
-    summary: "Deterministic governance enforcement architecture for autonomous financial actors operating on the XRP Ledger.",
+    summary: "Deterministic governance enforcement for autonomous financial actors on the XRP Ledger.",
     doi: "10.5281/zenodo.20280613",
     href: "https://doi.org/10.5281/zenodo.20280613",
     datePublished: "2026-06",
@@ -36,7 +85,7 @@ export const latestPapers = [
   {
     label: "Paper VII",
     title: "Agentic Governance Benchmark (AGB)",
-    summary: "Measurement instrument for evaluating AI governance enforcement maturity across deterministic, cryptographic, and operational dimensions. ExecLayer self-scored 97.5 at Sovereign tier.",
+    summary: "A measurement instrument for AI governance enforcement maturity across deterministic, cryptographic, and operational dimensions. ExecLayer self-scored 97.5 at Sovereign tier, and yes, self-scored is disclosed because that's the point of a public instrument.",
     doi: "10.5281/zenodo.20496565",
     href: "https://doi.org/10.5281/zenodo.20496565",
     datePublished: "2026-06",
@@ -44,7 +93,7 @@ export const latestPapers = [
   {
     label: "Paper VIII",
     title: "Override Health Benchmark (OHB)",
-    summary: "Auditor-facing measurement instrument for evaluating the structural integrity of AI override, escalation, and human-in-the-loop mechanisms.",
+    summary: "An auditor-facing instrument for the structural integrity of AI override, escalation, and human-in-the-loop mechanisms.",
     doi: "10.5281/zenodo.20720238",
     href: "https://doi.org/10.5281/zenodo.20720238",
     datePublished: "2026-07",
@@ -52,9 +101,10 @@ export const latestPapers = [
 ];
 
 export const book = {
-  title: "The End of Probabilistic Governance",
+  title: "The End of Probabilistic Governance: How to Build Deterministic AI Enforcement Infrastructure",
   isbn: "9798180419286",
   publisher: "ExecLayer Media",
+  summary: "The full argument in one place.",
 };
 
 export const ssrnPublication = {
@@ -76,103 +126,120 @@ export const foundationalArchive = {
 export const filedPatents = [
   {
     number: 1,
-    title: "U.S. Provisional Application No. 63/901,870",
     name: "PartsGenie Voice Kiosk",
+    serial: "U.S. Provisional 63/901,870",
     filing: "Filed October 20, 2025",
     summary: "Voice-driven parts retrieval kiosk architecture for industrial and retail counter operations.",
   },
   {
     number: 2,
-    title: "U.S. Provisional Application No. 63/952,140",
     name: "GenOps / Blueprint Protocol",
+    serial: "U.S. Provisional 63/952,140",
     filing: "Filed December 31, 2025",
-    summary: "Generative operations runtime and blueprint protocol for deterministic, sandboxed AI execution.",
+    summary: "Generative operations runtime and blueprint protocol for deterministic, sandboxed AI execution. Filed on New Year's Eve, which tells you something about how I spend holidays.",
   },
   {
     number: 3,
-    title: "U.S. Provisional Application No. 63/983,308",
-    name: "DetGate (Deterministic Execution-Bound Governance)",
+    name: "DetGate",
+    serial: "U.S. Provisional 63/983,308",
     filing: "Filed February 14, 2026",
     summary: "Deterministic execution-bound governance gating for fail-closed enforcement of AI-driven actions.",
   },
   {
     number: 4,
-    title: "U.S. Provisional Application No. 64/014,664",
     name: "Emotional Signal Capture",
+    serial: "U.S. Provisional 64/014,664",
     filing: "Filed March 23, 2026",
-    summary: "Publicly disclosed alongside Paper V as the patent filing tied to governed emotional signal capture and attested calibration for language model alignment.",
-    focusAreas: [
-      "Four-channel emotional signal capture",
-      "Dual-axis weighting for reasoning quality and emotional salience",
-      "Persistent emotional memory with Bayesian belief updates",
-      "Cryptographic attestation across the calibration trajectory",
-    ],
+    summary: "Publicly disclosed alongside Paper V. Four-channel emotional signal capture, dual-axis weighting for reasoning quality and emotional salience, persistent emotional memory with Bayesian belief updates, cryptographic attestation across the calibration trajectory.",
   },
   {
     number: 5,
-    title: "U.S. Provisional Application No. 64/069,063",
     name: "SovereignGate",
+    serial: "U.S. Provisional 64/069,063",
     filing: "Filed May 19, 2026",
-    summary: "XRPL-native governance enforcement for autonomous financial actors. Deterministic gating bound to ledger settlement.",
+    summary: "XRPL-native governance enforcement for autonomous financial actors, deterministic gating bound to ledger settlement.",
   },
   {
     number: 6,
-    title: "U.S. Provisional Application No. 64/099,216",
     name: "Evidence-Bound Deterministic Authority Kernel",
+    serial: "U.S. Provisional 64/099,216",
     filing: "Filed June 25, 2026",
-    summary: "Evidence-bound deterministic authority kernel with cognitive-write and neural-interface claims for governed execution at the boundary of AI and biological signal processing.",
+    summary: "Cognitive-write and neural-interface claims for governed execution at the boundary of AI and biological signal processing.",
   },
 ];
 
-export const patentPortfolioThemes = [
-  "Deterministic execution gating",
-  "Schema-based authority evaluation",
-  "Cryptographic receipt verification",
-  "Governed multimodal emotional calibration",
-  "XRPL-native governance enforcement for autonomous financial actors",
-  "Evidence-bound neural-interface enforcement for BCI governance",
-];
-
-export const ecosystemProjects = [
+export const ecosystemProjects: {
+  label: string;
+  title: string;
+  href?: string;
+  links?: { label: string; href: string }[];
+  summary: string;
+}[] = [
   { label: "Company and doctrine layer", title: "ExecLayer", href: "https://www.execlayer.io", summary: "The company, research surface, and public doctrine layer for execution authority in AI systems." },
-  { label: "Deterministic execution kernel", title: "SovereignClaw", href: "https://sovereignclaw.com", summary: "Deterministic execution kernel written in Rust. Cryptographically gates every autonomous AI agent action before it runs. 1,108+ passing tests, 36 adversarial attack scenarios, 8 formal security properties." },
-  { label: "XRPL-native governance enforcement", title: "SovereignGate", href: "https://github.com/BMC-INC", summary: "Deterministic governance enforcement for autonomous actors on XRPL. Six-crate Rust workspace, 253 tests. Patent #5 filed May 2026." },
+  { label: "Deterministic execution kernel", title: "SovereignClaw", href: "https://sovereignclaw.com", summary: "Deterministic execution kernel written in Rust. Cryptographically gates every autonomous agent action before it runs. 1,200+ passing tests across 32+ crates, with an adversarial attack suite standing guard over the enforcement boundary." },
+  { label: "XRPL-native governance enforcement", title: "SovereignGate", href: "https://github.com/BMC-INC", summary: "Deterministic governance enforcement for autonomous actors on XRPL. Six-crate Rust workspace, 253 tests. Patent #5." },
   { label: "Governed skill supply chain", title: "Agent Clawbrary", href: "https://sovereignclaw.com/clawbrary", summary: "A receipt-backed catalog that crawls, evaluates, signs, and publishes governed skill bundles." },
-  { label: "Prompt optimization engine", title: "SovereignPrompt", href: "https://sovereignclaw.com/sovereign-prompt", summary: "An MCP-native prompt optimization engine built in Rust for local prompt analysis and signed audit trails." },
-  { label: "Public kernel interface", title: "ExecLayer Kernel V4", href: "https://github.com/BMC-INC/execlayer-kernel-v4", summary: "The public V4 interface for exercising governance evaluation, blueprint generation, and receipt anchoring." },
-  { label: "AI agent governance directory", title: "Atestiv", href: "https://atestiv.com", summary: "The governance credentialing directory for verified AI agents with trust badges from the Agent Clawbrary catalog." },
-  { label: "Launched on Amazon Ring app platform", title: "QueueFlow Sentinel", href: "https://techcrunch.com/2026/03/31/ring-app-store-bets-on-ai-to-go-beyond-home-security/", summary: "Security monitoring application launched on the Amazon Ring app platform. Featured in TechCrunch coverage of Ring's app store launch." },
-  { label: "Public restaurant queue monitoring", title: "QueueFlow Lines", href: "https://github.com/BMC-INC", summary: "Public restaurant queue monitoring via Ring camera feeds. No app, no login, one-time email alert. Launching Q2 2026." },
-  { label: "AI context persistence", title: "IronMem", href: "https://github.com/BMC-INC/Iron-Mem", summary: "Rust-based AI context persistence for Claude Code. Open source." },
-  { label: "Governance measurement standard", title: "Agentic Governance Benchmark (AGB)", href: "https://doi.org/10.5281/zenodo.20496565", summary: "Measurement instrument for evaluating AI governance enforcement maturity. ExecLayer self-scored 97.5 at Sovereign tier. DOI: 10.5281/zenodo.20496565." },
-  { label: "Deterministic governance gate", title: "DetGate", href: "https://github.com/BMC-INC", summary: "Deterministic governance gate. Schema-based authority evaluation with Fact Origin Attestation Validator." },
-  { label: "Override integrity measurement", title: "Override Health Benchmark (OHB)", href: "https://doi.org/10.5281/zenodo.20720238", summary: "Auditor-facing measurement instrument for evaluating AI override, escalation, and human-in-the-loop mechanisms. DOI: 10.5281/zenodo.20720238." },
+  { label: "Prompt optimization engine", title: "SovereignPrompt", href: "https://sovereignclaw.com/sovereign-prompt", summary: "MCP-native prompt optimization engine built in Rust. Local analysis, signed audit trails." },
+  { label: "Public kernel interface", title: "ExecLayer Kernel V4", href: "https://github.com/BMC-INC/execlayer-kernel-v4", summary: "The public V4 interface for governance evaluation, blueprint generation, and receipt anchoring." },
+  { label: "AI agent governance directory", title: "Atestiv", href: "https://atestiv.com", summary: "Governance credentialing directory for verified AI agents, with trust badges from the Agent Clawbrary catalog." },
+  { label: "Launched on Amazon Ring app platform", title: "QueueFlow Sentinel", href: "https://techcrunch.com/2026/03/31/ring-app-store-bets-on-ai-to-go-beyond-home-security/", summary: "Security monitoring launched on the Amazon Ring app platform as a named launch partner. Featured in TechCrunch's coverage of the Ring app store launch." },
+  { label: "AI context persistence", title: "IronMem", href: "https://github.com/BMC-INC/Iron-Mem", summary: "Rust-based AI context persistence for Claude Code. Open source, because memory infrastructure shouldn't be a moat." },
+  {
+    label: "Published measurement instruments",
+    title: "AGB and OHB",
+    summary: "The two published measurement instruments from the Research page, listed here because they're products too: open standards anyone can score themselves against.",
+    links: [
+      { label: "Agentic Governance Benchmark", href: "https://doi.org/10.5281/zenodo.20496565" },
+      { label: "Override Health Benchmark", href: "https://doi.org/10.5281/zenodo.20720238" },
+    ],
+  },
+  { label: "Deterministic governance gate", title: "DetGate", href: "https://github.com/BMC-INC", summary: "Deterministic governance gate. Schema-based authority evaluation with the Fact Origin Attestation Validator." },
 ];
 
 export const evidenceLinks: {
   title: string;
   description: string;
   href?: string;
+  links?: { label: string; href: string }[];
 }[] = [
-  { title: "TechCrunch", description: "QueueFlow Sentinel featured in TechCrunch coverage of Ring's app platform launch.", href: "https://techcrunch.com/2026/03/31/ring-app-store-bets-on-ai-to-go-beyond-home-security/" },
-  { title: "ExecLayer PR", description: "Official press announcement: patent-pending generative operations platform for enterprise.", href: "https://www.pr.com/press-release/957387" },
-  { title: "Crunchbase", description: "Company profile covering ExecLayer's public organization record and business identity.", href: "https://www.crunchbase.com/organization/execlayer" },
-  { title: "Britannia / RST", description: "Public disclosure of Master Services Agreement for international regulatory-compliant ingredient supply.", href: "https://www.newsfilecorp.com/release/110456/Britannia-Secures-Agreement-with-RST-to-Supply-UK-CBD-Market" },
-  { title: "ASTM D37 Committee", description: "Official ASTM International committee page for consensus standards in regulated product safety and testing.", href: "https://www.astm.org/committees/d37.html" },
-  { title: "Zenodo Publication Archive", description: "DOI-registered publication archive for the ExecLayer research series, including the foundational papers, AGB, OHB, and SovereignGate white paper.", href: "https://zenodo.org/records/18521539" },
-  { title: "ASTM F45 Committee", description: "ASTM International committee for Robotics, Automation, and Autonomous Systems standards.", href: "https://www.astm.org/committees/f45.html" },
-  { title: "CEN-CENELEC JTC 21", description: "European AI standards body. Designated Technical Expert in WG2 and WG3.", href: "https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/" },
-  { title: "NVIDIA Inception", description: "Accepted into the NVIDIA Inception program for AI startups." },
-  { title: "Anthropic Claude Partner Network", description: "Accepted into the Anthropic Claude Partner Network." },
-  { title: "SAM.gov Registration", description: "Active federal entity registration.", href: "https://sam.gov" },
-  { title: "Agentic Governance Benchmark (AGB)", description: "Published governance measurement instrument. DOI-registered on Zenodo.", href: "https://doi.org/10.5281/zenodo.20496565" },
-  { title: "Override Health Benchmark (OHB)", description: "Published override and escalation measurement instrument. DOI-registered on Zenodo.", href: "https://doi.org/10.5281/zenodo.20720238" },
+  { title: "TechCrunch", description: "QueueFlow Sentinel in coverage of Ring's app platform launch.", href: "https://techcrunch.com/2026/03/31/ring-app-store-bets-on-ai-to-go-beyond-home-security/" },
+  { title: "ExecLayer PR", description: "Official press announcement of the patent-pending generative operations platform.", href: "https://www.pr.com/press-release/957387" },
+  { title: "Crunchbase", description: "Company profile and public organization record.", href: "https://www.crunchbase.com/organization/execlayer" },
+  { title: "Britannia / RST", description: "Public disclosure of a Master Services Agreement for international regulatory-compliant ingredient supply.", href: "https://www.newsfilecorp.com/release/110456/Britannia-Secures-Agreement-with-RST-to-Supply-UK-CBD-Market" },
+  {
+    title: "ASTM D37 and F45",
+    description: "Official committee pages.",
+    links: [
+      { label: "D37", href: "https://www.astm.org/committees/d37.html" },
+      { label: "F45", href: "https://www.astm.org/committees/f45.html" },
+    ],
+  },
+  { title: "CEN-CENELEC JTC 21", description: "Designated Technical Expert, WG2 and WG3.", href: "https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/" },
+  { title: "Zenodo", description: "DOI-registered archive for the full research series, AGB, OHB, and the SovereignGate white paper.", href: "https://zenodo.org/records/18521539" },
+  { title: "NVIDIA Inception", description: "Accepted." },
+  { title: "Anthropic Claude Partner Network", description: "Accepted." },
+  { title: "SAM.gov", description: "Active federal entity registration.", href: "https://sam.gov" },
 ];
 
 export const philosophyPrinciples = [
-  "Shape rules early rather than reacting after enforcement.",
-  "Educate regulators using science and standards.",
-  "Design compliance into products and processes.",
-  "Prioritize durable market access over short-term revenue.",
-  "Build credibility that compounds over time.",
+  {
+    title: "Do what's right when no one is judging you.",
+    body: "Early in my healthcare career an administrator taught me that if you walk past trash, you own the trash. Title irrelevant, job description irrelevant. That lesson scaled from a hallway to a company: accountability that only activates under observation isn't accountability. It's performance. It's also exactly why I build enforcement instead of advisory tooling.",
+  },
+  {
+    title: "Shape rules early instead of reacting after enforcement.",
+    body: "I've been on both sides of that timeline. Early is cheaper, and early is where you have a say.",
+  },
+  {
+    title: "Design compliance into the product.",
+    body: "Bolt-on compliance fails at the worst possible moment. In formulation it meant dose uniformity from the first batch. In software it means the gate runs before the action, not the audit after.",
+  },
+  {
+    title: "Methodical over hype.",
+    body: "Slow is the accusation. Methodical is the fact. I'd rather be the elephant that's still standing in ten years than the unicorn that needed the next round to exist.",
+  },
+  {
+    title: "Build credibility that compounds.",
+    body: "Patents, papers, standards seats, receipts. Each one alone is small. Stacked over years, they become the kind of record you can't shortcut. That's the whole strategy, and it's on this site in public.",
+  },
 ];

@@ -1,98 +1,43 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
+import { recordSections } from "@/lib/siteData";
 
 export const metadata: Metadata = {
-  title: "Professional Record",
+  title: "Record",
   description:
-    "Career record spanning regulatory policy, ASTM standards governance, international compliance, and AI runtime enforcement.",
+    "Healthcare operations, regulatory policy formation, ASTM and CEN-CENELEC standards work, international compliance, and applied formulation science.",
   alternates: { canonical: "https://execlayer.net/record" },
   openGraph: {
-    title: "Professional Record | James Benton",
+    title: "Record | James Benton",
     description:
-      "Career record spanning regulatory policy, ASTM/CEN-CENELEC/ISO standards governance, international compliance, and AI runtime enforcement.",
+      "Healthcare operations, regulatory policy formation, ASTM and CEN-CENELEC standards work, international compliance, and applied formulation science.",
     url: "https://execlayer.net/record",
     type: "profile",
   },
   twitter: {
     card: "summary",
-    title: "Professional Record | James Benton",
+    title: "Record | James Benton",
     description:
-      "Career record spanning regulatory policy, ASTM/CEN-CENELEC/ISO standards governance, international compliance, and AI runtime enforcement.",
+      "Healthcare operations, regulatory policy formation, ASTM and CEN-CENELEC standards work, international compliance, and applied formulation science.",
   },
 };
-
-const sections = [
-  {
-    title: "Regulatory Policy Formation",
-    occupation: "Regulatory Policy Advisor",
-    items: [
-      "Shaped policy at city, county, and state level during early market formation in highly regulated industries.",
-      "Worked directly with regulators, planning departments, and enforcement agencies.",
-      "Represented industry stakeholders during ordinance drafting and implementation.",
-      "Operated inside ambiguity where judgment preceded precedent.",
-    ],
-  },
-  {
-    title: "Standards and Governance",
-    occupation: "International Standards Committee Member",
-    items: [
-      "ASTM D37 committee member.",
-      "ASTM F45 committee member (Robotics, Automation, and Autonomous Systems).",
-      "CEN-CENELEC JTC 21 designated Technical Expert (WG2/WG3) for European AI standards.",
-      "ISO/IEC JTC 1/SC 42 observer via UNE (CTN-UNE 71/SC 42) for international AI standards.",
-      "Contribute to consensus standards across regulated product safety, AI governance, and autonomous systems.",
-      "Bridge between standards development and real-world manufacturing and compliance execution.",
-    ],
-  },
-  {
-    title: "Regulated Manufacturing & International Compliance",
-    occupation: "Co-Founder, Remediation Sciences & Technology",
-    items: [
-      "Co-founder of Remediation Sciences & Technology, PLLC.",
-      "B2B ingredient and technology provider.",
-      "Executed UK and EU market access under fragmented national regulatory frameworks.",
-      "Cross-border documentation requirements, strict regulatory thresholds, lab variance risk management.",
-    ],
-  },
-  {
-    title: "Applied Science & Formulation",
-    occupation: "Formulation Lead",
-    items: [
-      "Water-soluble formulations for regulated consumer products.",
-      "Dose uniformity, onset predictability, and stability.",
-      "Collaboration with former pharmaceutical scientists (GW Pharmaceuticals).",
-      "Formulation treated as the first layer of compliance, not an afterthought.",
-    ],
-  },
-  {
-    title: "High-Risk Brand & Market Execution",
-    occupation: "Regulatory & Compliance Lead",
-    items: [
-      "Regulatory and compliance leadership for high-visibility product launches in regulated industries.",
-      "Packaging, labeling, and distribution under heightened enforcement scrutiny.",
-      "Protected long-term brand and category credibility.",
-    ],
-  },
-];
 
 export default function RecordPage() {
   return (
     <main className="flex-1 max-w-3xl mx-auto w-full px-6 py-16">
       <h1 className="font-[family-name:var(--font-display)] text-3xl sm:text-4xl mb-12">
-        Professional Record
+        Record
       </h1>
 
       <div className="space-y-12">
-        {sections.map((section) => (
+        {recordSections.map((section) => (
           <section key={section.title}>
             <h2 className="font-[family-name:var(--font-display)] text-xl mb-4 text-[var(--color-foreground)]">
               {section.title}
             </h2>
-            <ul className="space-y-2 text-[var(--color-muted)] list-disc list-outside ml-5">
-              {section.items.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            <p className="text-[var(--color-muted)] leading-relaxed">
+              {section.body}
+            </p>
           </section>
         ))}
       </div>
@@ -104,7 +49,7 @@ export default function RecordPage() {
           name: "James Benton",
           jobTitle: "Founder, ExecLayer",
           url: "https://execlayer.net",
-          hasOccupation: sections.map((s) => ({
+          hasOccupation: recordSections.map((s) => ({
             "@type": "Occupation",
             name: s.occupation,
           })),
