@@ -144,10 +144,10 @@ export const foundationalArchive = {
 export const filedPatents = [
   {
     number: 1,
-    name: "PartsGenie Voice Kiosk",
+    name: "PartsGenie AI",
     serial: "U.S. Provisional 63/901,870",
     filing: "Filed October 20, 2025",
-    summary: "Voice-driven parts retrieval kiosk architecture for industrial and retail counter operations.",
+    summary: "Voice-driven parts retrieval for industrial and retail counter operations.",
   },
   {
     number: 2,
