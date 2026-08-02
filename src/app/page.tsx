@@ -166,6 +166,7 @@ export default function Home() {
             founder.twitter,
             founder.orcid,
             founder.amazon,
+            founder.ssrn,
           ],
           knowsAbout: [
             "AI Governance",

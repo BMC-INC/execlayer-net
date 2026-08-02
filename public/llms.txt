@@ -2,7 +2,7 @@
 > Preferred summary for LLM crawlers and answer engines.
 
 ## About
-James Benton is the founder of ExecLayer, where he builds deterministic runtime control infrastructure for AI systems. He came up through regulated industries: healthcare operations leading 200+ person teams, regulated manufacturing, international compliance, and standards committees. Based in Monterey, California.
+James Benton is the founder of ExecLayer, where he builds deterministic runtime control infrastructure for AI systems. He came up through regulated industries: healthcare operations leading 200+ person teams across convalescent hospitals and psychiatric wards, regulated manufacturing, international compliance, and standards committees. He held those operations roles as a third-party contractor, accountable for compliance inside facilities he did not own. Cal/OSHA 30 certified. Based in Monterey, California.
 
 ## Standards
 - ASTM committee member (D37, F45)
@@ -73,3 +73,4 @@ Portfolio through-line: deterministic gating, schema-based authority evaluation,
 - https://substack.com/@execlayer : Substack
 - https://x.com/JamesBentonArc : X
 - https://orcid.org/0009-0001-1947-1473 : ORCID
+- https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10470856 : SSRN author page

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | James Benton",
   },
   description:
-    "Founder of ExecLayer. Published research, patent portfolio, and operator background in AI governance and regulated industries.",
+    "I build deterministic runtime control infrastructure for AI systems. Founder of ExecLayer. Ten papers, six patents filed pro se, and standards seats at ASTM and CEN-CENELEC.",
   metadataBase: new URL("https://execlayer.net"),
   verification: { google: "googlec016a09ca616f3e4" },
   robots: { index: true, follow: true },
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     siteName: "James Benton",
     title: "James Benton, Founder of ExecLayer",
     description:
-      "Founder of ExecLayer. Published research, patent portfolio, and operator background in AI governance and regulated industries.",
+      "I build deterministic runtime control infrastructure for AI systems. Founder of ExecLayer. Ten papers, six patents filed pro se, and standards seats at ASTM and CEN-CENELEC.",
   },
   twitter: {
     card: "summary_large_image",
     title: "James Benton, Founder of ExecLayer",
     description:
-      "Founder of ExecLayer. Published research, patent portfolio, and operator background in AI governance and regulated industries.",
+      "I build deterministic runtime control infrastructure for AI systems. Founder of ExecLayer. Ten papers, six patents filed pro se, and standards seats at ASTM and CEN-CENELEC.",
   },
   alternates: { canonical: "https://execlayer.net" },
 };
