@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { JsonLd } from "@/components/JsonLd";
 import { ExternalLink } from "@/components/ExternalLink";
 import { evidenceLinks } from "@/lib/siteData";
@@ -42,6 +43,15 @@ export default function EvidencePage() {
             <p className="mt-1 text-[var(--color-muted)]">
               {link.description}
             </p>
+            {link.badge && (
+              <Image
+                src={link.badge.src}
+                alt={link.badge.alt}
+                width={link.badge.width}
+                height={link.badge.height}
+                className="mt-3 h-auto w-[220px] max-w-full"
+              />
+            )}
             {(link.href || link.links) && (
               <div className="mt-2 flex flex-wrap gap-x-6 gap-y-2">
                 {link.links ? (

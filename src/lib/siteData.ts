@@ -161,7 +161,7 @@ export const filedPatents = [
     name: "DetGate",
     serial: "U.S. Provisional 63/983,308",
     filing: "Filed February 14, 2026",
-    summary: "Deterministic execution-bound governance gating for fail-closed enforcement of AI-driven actions.",
+    summary: "Deterministic execution-bound governance gating for fail-closed enforcement of AI-driven actions. 35 claims, 10 independent, across 5 axes.",
   },
   {
     number: 4,
@@ -220,6 +220,7 @@ export const evidenceLinks: {
   description: string;
   href?: string;
   links?: { label: string; href: string }[];
+  badge?: { src: string; alt: string; width: number; height: number };
 }[] = [
   { title: "TechCrunch", description: "QueueFlow Sentinel in coverage of Ring's app platform launch.", href: "https://techcrunch.com/2026/03/31/ring-app-store-bets-on-ai-to-go-beyond-home-security/" },
   { title: "ExecLayer PR", description: "Official press announcement of the patent-pending generative operations platform.", href: "https://www.pr.com/press-release/957387" },
@@ -236,7 +237,16 @@ export const evidenceLinks: {
   { title: "CEN-CENELEC JTC 21", description: "Designated Technical Expert, WG2 and WG3.", href: "https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/" },
   { title: "Zenodo", description: "DOI-registered archive for the full research series, AGB, OHB, and the SovereignGate white paper.", href: "https://zenodo.org/records/18749299" },
   { title: "SSRN", description: "Author page and distributed working papers.", href: "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10470856" },
-  { title: "NVIDIA Inception", description: "Accepted." },
+  {
+    title: "NVIDIA Inception",
+    description: "Accepted.",
+    badge: {
+      src: "/nvidia-inception-badge.svg",
+      alt: "NVIDIA Inception Program badge",
+      width: 500,
+      height: 216,
+    },
+  },
   { title: "Anthropic Claude Partner Network", description: "Accepted." },
   { title: "SAM.gov", description: "Active federal entity registration.", href: "https://sam.gov" },
 ];
