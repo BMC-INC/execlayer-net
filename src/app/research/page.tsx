@@ -13,12 +13,12 @@ import {
 export const metadata: Metadata = {
   title: "Research",
   description:
-    "DOI-registered research on deterministic runtime enforcement, governed execution, and AI governance benchmarks. Eight papers, one book.",
+    "DOI-registered research on deterministic runtime enforcement, governed execution, and AI governance benchmarks. Ten papers, one book.",
   alternates: { canonical: "https://execlayer.net/research" },
   openGraph: {
     title: "Research | James Benton",
     description:
-      "DOI-registered research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Eight papers, one book.",
+      "DOI-registered research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Ten papers, one book.",
     url: "https://execlayer.net/research",
     type: "website",
   },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Research | James Benton",
     description:
-      "DOI-registered research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Eight papers, one book.",
+      "DOI-registered research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Ten papers, one book.",
   },
 };
 

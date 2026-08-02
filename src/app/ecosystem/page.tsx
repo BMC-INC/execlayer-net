@@ -40,9 +40,16 @@ export default function EcosystemPage() {
             key={project.title}
             className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6"
           >
-            <p className="text-xs uppercase tracking-widest text-[var(--color-accent)]">
-              {project.label}
-            </p>
+            <div className="flex flex-wrap items-center gap-3">
+              <p className="text-xs uppercase tracking-widest text-[var(--color-accent)]">
+                {project.label}
+              </p>
+              {project.openSource && (
+                <span className="text-xs uppercase tracking-widest border border-[var(--color-border)] rounded-full px-2 py-0.5 text-[var(--color-muted)]">
+                  Open source
+                </span>
+              )}
+            </div>
             <h2 className="mt-2 text-lg font-[family-name:var(--font-display)] text-[var(--color-foreground)]">
               {project.title}
             </h2>
