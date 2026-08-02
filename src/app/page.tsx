@@ -19,8 +19,8 @@ export default function Home() {
           Who I am
         </h2>
         <p className="text-[var(--color-muted)] leading-relaxed mb-4">
-          I&apos;m James Benton. Founder of ExecLayer. Father. Builder. Based in
-          Monterey, CA.
+          I&apos;m James D. Benton Jr. Founder of ExecLayer. Father. Builder.
+          Based in Monterey, CA.
         </p>
         <p className="text-[var(--color-muted)] leading-relaxed mb-4">
           I don&apos;t have a degree and I&apos;ve stopped pretending that&apos;s
@@ -153,6 +153,7 @@ export default function Home() {
           "@context": "https://schema.org",
           "@type": "Person",
           name: founder.name,
+          alternateName: founder.fullName,
           jobTitle: founder.jobTitle,
           url: founder.url,
           homeLocation: {

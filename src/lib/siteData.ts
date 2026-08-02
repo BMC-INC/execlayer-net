@@ -1,5 +1,6 @@
 export const founder = {
   name: "James Benton",
+  fullName: "James D. Benton Jr.",
   jobTitle: "Founder, ExecLayer",
   linkedin: "https://www.linkedin.com/in/james-benton-execlayer/",
   github: "https://github.com/BMC-INC",
