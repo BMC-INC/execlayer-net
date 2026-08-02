@@ -29,7 +29,9 @@ Portfolio through-line: deterministic gating, schema-based authority evaluation,
 - Paper VI: SovereignGate, XRPL-Native Governance Enforcement (DOI: 10.5281/zenodo.20280613)
 - Paper VII: Agentic Governance Benchmark, AGB (DOI: 10.5281/zenodo.20496565)
 - Paper VIII: Override Health Benchmark, OHB (DOI: 10.5281/zenodo.20720238)
-- Archive version DOI: 10.5281/zenodo.18521539
+- Paper IX: The Missing Control Boundary, deterministic governance for brain-computer interfaces and cognitive-write systems (DOI: 10.5281/zenodo.20952564)
+- Paper X: Deterministic Execution Authority for Autonomous Space Systems, governance for orbital platforms under the Outer Space Treaty (DOI: 10.5281/zenodo.20956531)
+- Archive version DOI: 10.5281/zenodo.18749299 (v1.0.2)
 - Archive concept DOI: 10.5281/zenodo.18521538
 - SSRN Abstract 6290760, distributed April 8, 2026
 - Publisher: ExecLayer Inc., Wilmington, Delaware
@@ -45,7 +47,7 @@ Portfolio through-line: deterministic gating, schema-based authority evaluation,
 - SovereignClaw (sovereignclaw.com): deterministic execution kernel in Rust, 1,200+ tests across 32+ crates
 - SovereignGate: XRPL-native governance enforcement, six-crate Rust workspace, 253 tests
 - Agent Clawbrary: governed skill supply chain
-- SovereignPrompt: MCP-native prompt optimization engine
+- SovereignPrompt: MCP-native prompt optimization engine, open source
 - ExecLayer Kernel V4 (github.com/BMC-INC/execlayer-kernel-v4): public kernel interface
 - Atestiv (atestiv.com): AI agent governance credentialing directory
 - QueueFlow Sentinel: launched on the Amazon Ring app platform as a named launch partner (TechCrunch, March 2026)
