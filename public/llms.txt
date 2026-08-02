@@ -11,7 +11,7 @@ James Benton is the founder of ExecLayer, where he builds deterministic runtime 
 
 ## Intellectual Property
 Six U.S. provisional patents, all filed pro se as a micro entity:
-- 63/901,870 (Filed October 20, 2025): PartsGenie Voice Kiosk
+- 63/901,870 (Filed October 20, 2025): PartsGenie AI
 - 63/952,140 (Filed December 31, 2025): GenOps / Blueprint Protocol
 - 63/983,308 (Filed February 14, 2026): DetGate, deterministic execution-bound governance gating
 - 64/014,664 (Filed March 23, 2026): Emotional Signal Capture, governed emotional signal capture and attested calibration
