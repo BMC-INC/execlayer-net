@@ -5,12 +5,12 @@ import { recordSections } from "@/lib/siteData";
 export const metadata: Metadata = {
   title: "Record",
   description:
-    "Healthcare operations, regulatory policy formation, ASTM and CEN-CENELEC standards work, international compliance, and applied formulation science.",
+    "Healthcare operations across convalescent hospitals and psychiatric wards, regulatory policy formation, ASTM and CEN-CENELEC standards work, international compliance, and applied formulation science.",
   alternates: { canonical: "https://execlayer.net/record" },
   openGraph: {
     title: "Record | James Benton",
     description:
-      "Healthcare operations, regulatory policy formation, ASTM and CEN-CENELEC standards work, international compliance, and applied formulation science.",
+      "Healthcare operations across convalescent hospitals and psychiatric wards, regulatory policy formation, ASTM and CEN-CENELEC standards work, international compliance, and applied formulation science.",
     url: "https://execlayer.net/record",
     type: "profile",
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Record | James Benton",
     description:
-      "Healthcare operations, regulatory policy formation, ASTM and CEN-CENELEC standards work, international compliance, and applied formulation science.",
+      "Healthcare operations across convalescent hospitals and psychiatric wards, regulatory policy formation, ASTM and CEN-CENELEC standards work, international compliance, and applied formulation science.",
   },
 };
 

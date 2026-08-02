@@ -1,5 +1,6 @@
 export const founder = {
   name: "James Benton",
+  fullName: "James D. Benton Jr.",
   jobTitle: "Founder, ExecLayer",
   linkedin: "https://www.linkedin.com/in/james-benton-execlayer/",
   github: "https://github.com/BMC-INC",
@@ -7,6 +8,7 @@ export const founder = {
   twitter: "https://x.com/JamesBentonArc",
   orcid: "https://orcid.org/0009-0001-1947-1473",
   amazon: "https://www.amazon.com/author/jamesbentonjr",
+  ssrn: "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10470856",
   url: "https://execlayer.net",
 };
 
@@ -29,7 +31,7 @@ export const recordSections = [
   {
     title: "Where I started",
     occupation: "Healthcare Operations Leader",
-    body: "My first job in healthcare was cleaning floors. About 40 days later I was running my own building. Not because anyone handed it to me, but because I treated a mop closet like a business and someone noticed. That pattern, learn fast, take ownership before the title arrives, has repeated in every industry since. I eventually led operations with 200+ employees in healthcare facilities, the kind of environment where a missed detail is a citation and a citation is a career.",
+    body: "My first job in healthcare was cleaning floors. About 40 days later I was running my own building. Not because anyone handed it to me, but because I treated a mop closet like a business and someone noticed. That pattern, learn fast, take ownership before the title arrives, has repeated in every industry since. I eventually led operations with 200+ employees across convalescent hospitals and psychiatric wards, the kind of environment where a missed detail is a citation and a citation is a career. Regulated environments with people in them, not just policy on paper. I did that work as a third-party contractor, accountable for compliance inside buildings I did not own and under a license that was not mine. You do not get to advise from that seat. You hand back a finished result. Cal/OSHA 30 certified.",
   },
   {
     title: "Regulatory policy formation",
@@ -232,7 +234,8 @@ export const evidenceLinks: {
     ],
   },
   { title: "CEN-CENELEC JTC 21", description: "Designated Technical Expert, WG2 and WG3.", href: "https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/" },
-  { title: "Zenodo", description: "DOI-registered archive for the full research series, AGB, OHB, and the SovereignGate white paper.", href: "https://zenodo.org/records/18521539" },
+  { title: "Zenodo", description: "DOI-registered archive for the full research series, AGB, OHB, and the SovereignGate white paper.", href: "https://zenodo.org/records/18749299" },
+  { title: "SSRN", description: "Author page and distributed working papers.", href: "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10470856" },
   { title: "NVIDIA Inception", description: "Accepted." },
   { title: "Anthropic Claude Partner Network", description: "Accepted." },
   { title: "SAM.gov", description: "Active federal entity registration.", href: "https://sam.gov" },
