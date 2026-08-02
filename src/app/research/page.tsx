@@ -11,36 +11,42 @@ import {
 } from "@/lib/siteData";
 
 export const metadata: Metadata = {
-  title: "Published Research",
+  title: "Research",
   description:
-    "Foundational research series on deterministic runtime enforcement, governed execution, and AI governance infrastructure.",
+    "DOI-registered research on deterministic runtime enforcement, governed execution, and AI governance benchmarks. Eight papers, one book.",
   alternates: { canonical: "https://execlayer.net/research" },
   openGraph: {
-    title: "Published Research | James Benton",
+    title: "Research | James Benton",
     description:
-      "Published research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Eight papers, one book.",
+      "DOI-registered research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Eight papers, one book.",
     url: "https://execlayer.net/research",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Published Research | James Benton",
+    title: "Research | James Benton",
     description:
-      "Published research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Eight papers, one book.",
+      "DOI-registered research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Eight papers, one book.",
   },
 };
 
 export default function ResearchPage() {
   return (
     <main className="flex-1 max-w-3xl mx-auto w-full px-6 py-16">
-      <h1 className="font-[family-name:var(--font-display)] text-3xl sm:text-4xl mb-12">
-        Published Research
+      <h1 className="font-[family-name:var(--font-display)] text-3xl sm:text-4xl mb-6">
+        Research
       </h1>
+
+      <p className="text-[var(--color-muted)] text-lg leading-relaxed mb-14">
+        I publish the thinking behind ExecLayer instead of keeping it in a pitch
+        deck. Everything below is DOI-registered or SSRN-distributed. Read it,
+        cite it, or try to break it.
+      </p>
 
       {/* Foundational Research Series */}
       <section className="mb-14">
         <h2 className="font-[family-name:var(--font-display)] text-xl mb-6 text-[var(--color-foreground)]">
-          Foundational Research Series
+          Foundational Research Series ({foundationalArchive.version} archive)
         </h2>
         <div className="space-y-4">
           {researchSeries.map((paper) => (
@@ -54,21 +60,18 @@ export default function ResearchPage() {
               <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
                 {paper.title}
               </h3>
-              <p className="text-[var(--color-muted)] text-sm mb-2">
+              <p className="text-[var(--color-muted)] text-sm">
                 {paper.summary}
-              </p>
-              <p className="text-xs text-[var(--color-muted)] opacity-70">
-                Included in the {foundationalArchive.version} archive
               </p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Latest White Papers */}
+      {/* White papers */}
       <section className="mb-14">
         <h2 className="font-[family-name:var(--font-display)] text-xl mb-6 text-[var(--color-foreground)]">
-          Latest White Papers
+          White papers
         </h2>
         <div className="space-y-4">
           <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6">
@@ -120,19 +123,19 @@ export default function ResearchPage() {
           <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
             {book.title}
           </h3>
-          <p className="text-sm text-[var(--color-muted)] mb-1">
-            ISBN {book.isbn}
+          <p className="text-[var(--color-muted)] text-sm mb-3">
+            {book.summary}
           </p>
           <p className="text-sm text-[var(--color-muted)]">
-            Published by {book.publisher}.
+            ISBN {book.isbn}. Published by {book.publisher}.
           </p>
         </div>
       </section>
 
-      {/* Archive Metadata */}
+      {/* Archive metadata */}
       <section className="mb-10">
         <h2 className="font-[family-name:var(--font-display)] text-xl mb-6 text-[var(--color-foreground)]">
-          Archive Metadata
+          Archive metadata
         </h2>
         <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6 space-y-2 text-sm text-[var(--color-muted)]">
           <p>
@@ -144,7 +147,7 @@ export default function ResearchPage() {
             {foundationalArchive.publisher}
           </p>
           <p>
-            <span className="text-[var(--color-foreground)]">Release Date:</span>{" "}
+            <span className="text-[var(--color-foreground)]">Released:</span>{" "}
             {foundationalArchive.releaseDate}
           </p>
           <p>
@@ -165,32 +168,17 @@ export default function ResearchPage() {
               {foundationalArchive.githubUrl}
             </ExternalLink>
           </p>
-        </div>
-      </section>
-
-      <section className="mb-10">
-        <h2 className="font-[family-name:var(--font-display)] text-xl mb-6 text-[var(--color-foreground)]">
-          SSRN Publication
-        </h2>
-        <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6 space-y-2 text-sm text-[var(--color-muted)]">
           <p>
-            <span className="text-[var(--color-foreground)]">Abstract ID:</span>{" "}
-            {ssrnPublication.abstractId}
-          </p>
-          <p>
-            <span className="text-[var(--color-foreground)]">Distributed:</span>{" "}
-            {ssrnPublication.distributionDate}
-          </p>
-          <p>
-            <span className="text-[var(--color-foreground)]">Link:</span>{" "}
+            <span className="text-[var(--color-foreground)]">SSRN:</span>{" "}
             <ExternalLink href={ssrnPublication.href}>
-              {ssrnPublication.href}
+              Abstract {ssrnPublication.abstractId}
             </ExternalLink>
+            , distributed {ssrnPublication.distributionDate}
           </p>
         </div>
       </section>
 
-      {/* JSON-LD for all 5 papers */}
+      {/* JSON-LD */}
       {researchSeries.map((paper) => (
         <JsonLd
           key={paper.label}
