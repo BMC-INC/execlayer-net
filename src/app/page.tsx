@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { JsonLd } from "@/components/JsonLd";
 import { ExternalLink } from "@/components/ExternalLink";
 import { books, founder } from "@/lib/siteData";
@@ -18,6 +19,14 @@ export default function Home() {
         <h2 className="font-[family-name:var(--font-display)] text-xl mb-4">
           Who I am
         </h2>
+        <Image
+          src="/james-benton.jpg"
+          alt="James D. Benton Jr."
+          width={440}
+          height={440}
+          priority
+          className="float-left mr-6 mb-3 h-auto w-32 sm:w-40 rounded-lg border border-[var(--color-border)]"
+        />
         <p className="text-[var(--color-muted)] leading-relaxed mb-4">
           I&apos;m James D. Benton Jr. Founder of ExecLayer. Father. Builder.
           Based in Monterey, CA.
@@ -156,6 +165,7 @@ export default function Home() {
           alternateName: founder.fullName,
           jobTitle: founder.jobTitle,
           url: founder.url,
+          image: "https://execlayer.net/james-benton.jpg",
           homeLocation: {
             "@type": "Place",
             name: "Monterey, California",
