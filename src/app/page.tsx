@@ -56,8 +56,8 @@ export default function Home() {
           is not a SaaS product. It&apos;s a platform: deterministic runtime
           control infrastructure for AI systems, with an ecosystem of products
           built on top of it. Fail-closed execution gating, cryptographic
-          receipts, governed artifact standards. I wrote the stack myself. 1,200+
-          tests, 32+ crates, seven provisional patents filed pro se, US and EU
+          receipts, governed artifact standards. I wrote the stack myself. 1,245+
+          tests, 32 crates, seven provisional patents filed pro se, US and EU
           scope.
         </p>
         <p className="text-[var(--color-muted)] leading-relaxed">

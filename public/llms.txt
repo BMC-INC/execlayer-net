@@ -44,7 +44,7 @@ Portfolio through-line: deterministic gating, schema-based authority evaluation,
 
 ## Ecosystem
 - ExecLayer (execlayer.io): company and doctrine layer
-- SovereignClaw (sovereignclaw.com): deterministic execution kernel in Rust, 1,200+ tests across 32+ crates
+- SovereignClaw (sovereignclaw.com): deterministic execution kernel in Rust, 1,245+ tests across 32 crates
 - SovereignGate: XRPL-native governance enforcement, six-crate Rust workspace, 253 tests
 - Agent Clawbrary: governed skill supply chain
 - SovereignPrompt: MCP-native prompt optimization engine, open source

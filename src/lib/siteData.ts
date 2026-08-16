@@ -202,7 +202,7 @@ export const ecosystemProjects: {
   openSource?: boolean;
 }[] = [
   { label: "Company and doctrine layer", title: "ExecLayer", href: "https://www.execlayer.io", summary: "The company, research surface, and public doctrine layer for execution authority in AI systems." },
-  { label: "Deterministic execution kernel", title: "SovereignClaw", href: "https://sovereignclaw.com", summary: "Deterministic execution kernel written in Rust. Cryptographically gates every autonomous agent action before it runs. 1,200+ passing tests across 32+ crates, with an adversarial attack suite standing guard over the enforcement boundary." },
+  { label: "Deterministic execution kernel", title: "SovereignClaw", href: "https://sovereignclaw.com", summary: "Deterministic execution kernel written in Rust. Cryptographically gates every autonomous agent action before it runs. 1,245+ passing tests across 32 crates, with an adversarial attack suite standing guard over the enforcement boundary." },
   { label: "XRPL-native governance enforcement", title: "SovereignGate", href: "https://github.com/BMC-INC", summary: "Deterministic governance enforcement for autonomous actors on XRPL. Six-crate Rust workspace, 253 tests. Patent #5." },
   { label: "Governed skill supply chain", title: "Agent Clawbrary", href: "https://sovereignclaw.com/clawbrary", summary: "A receipt-backed catalog that crawls, evaluates, signs, and publishes governed skill bundles." },
   { label: "Prompt optimization engine", title: "SovereignPrompt", href: "https://sovereignclaw.com/sovereign-prompt", summary: "MCP-native prompt optimization engine built in Rust. Local analysis, signed audit trails. Open source.", openSource: true },
