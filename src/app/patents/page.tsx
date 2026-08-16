@@ -5,12 +5,12 @@ import { filedPatents } from "@/lib/siteData";
 export const metadata: Metadata = {
   title: "Patents",
   description:
-    "Six provisional patents filed pro se, covering deterministic execution gating, governed emotional calibration, XRPL-native governance, and neural-interface enforcement.",
+    "Seven provisional patents filed pro se, covering deterministic execution gating, governed emotional calibration, XRPL-native governance, neural-interface enforcement, and physically isolated authority enforcement.",
   alternates: { canonical: "https://execlayer.net/patents" },
   openGraph: {
     title: "Patents | James Benton",
     description:
-      "Six provisional patents filed pro se, covering deterministic execution gating, governed emotional calibration, XRPL-native governance, and neural-interface enforcement.",
+      "Seven provisional patents filed pro se, covering deterministic execution gating, governed emotional calibration, XRPL-native governance, neural-interface enforcement, and physically isolated authority enforcement.",
     url: "https://execlayer.net/patents",
     type: "website",
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Patents | James Benton",
     description:
-      "Six provisional patents filed pro se, covering deterministic execution gating, governed emotional calibration, XRPL-native governance, and neural-interface enforcement.",
+      "Seven provisional patents filed pro se, covering deterministic execution gating, governed emotional calibration, XRPL-native governance, neural-interface enforcement, and physically isolated authority enforcement.",
   },
 };
 
@@ -29,6 +29,7 @@ const patentDates: Record<number, string> = {
   4: "2026-03-23",
   5: "2026-05-19",
   6: "2026-06-25",
+  7: "2026-08-12",
 };
 
 export default function PatentsPage() {
@@ -39,7 +40,7 @@ export default function PatentsPage() {
       </h1>
 
       <p className="text-[var(--color-muted)] text-lg leading-relaxed mb-14">
-        Six provisional patents, all filed pro se as a micro entity. I write my
+        Seven provisional patents, all filed pro se as a micro entity. I write my
         own claims because nobody understands this architecture better than the
         person who built it, and because filing pro se forces you to know exactly
         what you invented.

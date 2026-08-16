@@ -184,6 +184,13 @@ export const filedPatents = [
     filing: "Filed June 25, 2026",
     summary: "Cognitive-write and neural-interface claims for governed execution at the boundary of AI and biological signal processing.",
   },
+  {
+    number: 7,
+    name: "SovereignClaw AI-HSM",
+    serial: "U.S. Provisional 64/132,061",
+    filing: "Filed August 12, 2026",
+    summary: "Physically isolated authority enforcement module for governing actions proposed by probabilistic computational models. The enforcement kernel leaves the host it governs: a fully compromised machine cannot actuate hardware without a valid grant from the isolated module.",
+  },
 ];
 
 export const ecosystemProjects: {

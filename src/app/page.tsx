@@ -57,7 +57,7 @@ export default function Home() {
           control infrastructure for AI systems, with an ecosystem of products
           built on top of it. Fail-closed execution gating, cryptographic
           receipts, governed artifact standards. I wrote the stack myself. 1,200+
-          tests, 32+ crates, six provisional patents filed pro se, US and EU
+          tests, 32+ crates, seven provisional patents filed pro se, US and EU
           scope.
         </p>
         <p className="text-[var(--color-muted)] leading-relaxed">
