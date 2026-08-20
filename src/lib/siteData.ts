@@ -116,6 +116,14 @@ export const latestPapers = [
     href: "https://doi.org/10.5281/zenodo.20956531",
     datePublished: "2026-06",
   },
+  {
+    label: "Paper XI",
+    title: "Memory Governance Integrity Benchmark (MGIB)",
+    summary: "Whether persistent memory changes who an AI system believes is authorized to act. Poisoning detection is already covered elsewhere; this measures the execution-authority question underneath it, across long-horizon benign and adversarial interactions. Version 2.0.",
+    doi: "10.5281/zenodo.21856219",
+    href: "https://doi.org/10.5281/zenodo.21856219",
+    datePublished: "2026-08",
+  },
 ];
 
 export const book = {

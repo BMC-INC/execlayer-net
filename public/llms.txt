@@ -10,13 +10,14 @@ James Benton is the founder of ExecLayer, where he builds deterministic runtime 
 - ISO/IEC JTC 1/SC 42, observer via UNE
 
 ## Intellectual Property
-Six U.S. provisional patents, all filed pro se as a micro entity:
+Seven U.S. provisional patents, all filed pro se as a micro entity:
 - 63/901,870 (Filed October 20, 2025): PartsGenie AI
 - 63/952,140 (Filed December 31, 2025): GenOps / Blueprint Protocol
 - 63/983,308 (Filed February 14, 2026): DetGate, deterministic execution-bound governance gating
 - 64/014,664 (Filed March 23, 2026): Emotional Signal Capture, governed emotional signal capture and attested calibration
 - 64/069,063 (Filed May 19, 2026): SovereignGate, XRPL-native governance enforcement
 - 64/099,216 (Filed June 25, 2026): Evidence-Bound Deterministic Authority Kernel
+- 64/132,061 (Filed August 12, 2026): SovereignClaw AI-HSM, physically isolated authority enforcement module
 
 Portfolio through-line: deterministic gating, schema-based authority evaluation, cryptographic receipt verification.
 
@@ -31,6 +32,7 @@ Portfolio through-line: deterministic gating, schema-based authority evaluation,
 - Paper VIII: Override Health Benchmark, OHB (DOI: 10.5281/zenodo.20720238)
 - Paper IX: The Missing Control Boundary, deterministic governance for brain-computer interfaces and cognitive-write systems (DOI: 10.5281/zenodo.20952564)
 - Paper X: Deterministic Execution Authority for Autonomous Space Systems, governance for orbital platforms under the Outer Space Treaty (DOI: 10.5281/zenodo.20956531)
+- Paper XI: Memory Governance Integrity Benchmark, MGIB, memory-mediated authority failures (DOI: 10.5281/zenodo.21856219)
 - Archive version DOI: 10.5281/zenodo.18749299 (v1.0.2)
 - Archive concept DOI: 10.5281/zenodo.18521538
 - SSRN Abstract 6290760, distributed April 8, 2026
