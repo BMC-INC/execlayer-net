@@ -38,6 +38,10 @@ Portfolio through-line: deterministic gating, schema-based authority evaluation,
 - SSRN Abstract 6290760, distributed April 8, 2026
 - Publisher: ExecLayer Inc., Wilmington, Delaware
 
+## Recognition
+- ExecLayer is listed in Awesome AI Agent Governance under Governance Frameworks (August 2026), after the maintainer verified the Zenodo DOI, the public papers repo, and the live kernel at kernel.execlayer.io.
+- View the listing: https://github.com/agentrust-io/awesome-ai-governance#governance-frameworks
+
 ## Books
 - Wired Different: How the ADHD Brain Uses AI to Build What Nobody Thought Possible
 - Elephants Over Unicorns

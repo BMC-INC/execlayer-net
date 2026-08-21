@@ -8,6 +8,7 @@ import {
   book,
   ssrnPublication,
   foundationalArchive,
+  researchRecognition,
 } from "@/lib/siteData";
 
 export const metadata: Metadata = {
@@ -42,6 +43,31 @@ export default function ResearchPage() {
         deck. Everything below is DOI-registered or SSRN-distributed. Read it,
         cite it, or try to break it.
       </p>
+
+      <section className="mb-14" aria-labelledby="recognition-heading">
+        <h2
+          id="recognition-heading"
+          className="font-[family-name:var(--font-display)] text-xl mb-6 text-[var(--color-foreground)]"
+        >
+          Recognition
+        </h2>
+        <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6">
+          <p className="text-sm text-[var(--color-accent)] mb-1">
+            August 2026
+          </p>
+          <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
+            {researchRecognition.title}
+          </h3>
+          <p className="text-[var(--color-muted)] text-sm mb-3">
+            {researchRecognition.summary}
+          </p>
+          <p className="text-sm">
+            <ExternalLink href={researchRecognition.href}>
+              View the listing
+            </ExternalLink>
+          </p>
+        </div>
+      </section>
 
       {/* Foundational Research Series */}
       <section className="mb-14">

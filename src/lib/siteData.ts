@@ -149,6 +149,13 @@ export const foundationalArchive = {
   releaseDate: "February 2026",
 };
 
+export const researchRecognition = {
+  title: "Awesome AI Agent Governance",
+  summary:
+    "ExecLayer is listed in Awesome AI Agent Governance under Governance Frameworks (August 2026), after the maintainer verified the Zenodo DOI, the public papers repo, and the live kernel at kernel.execlayer.io.",
+  href: "https://github.com/agentrust-io/awesome-ai-governance#governance-frameworks",
+};
+
 export const filedPatents = [
   {
     number: 1,
