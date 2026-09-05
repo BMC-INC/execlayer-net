@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# execlayer.net
 
-## Getting Started
+The personal site of James Benton, founder of ExecLayer, published at
+**[execlayer.net](https://execlayer.net)**.
 
-First, run the development server:
+It is a biography and a public record: who he is, what he has built, what he
+has filed, and what he has published. The site is the thing. This repository is
+just where it is written and from where it deploys.
+
+**Read it at [execlayer.net](https://execlayer.net).** There is nothing here to
+install or download. It is not a template, a starter, or a product, and the
+content is not offered for reuse.
+
+## What is on the site
+
+| Page | What it holds |
+|---|---|
+| `/` | Who James is, and the short version of the work |
+| `/record` | The professional record: healthcare operations, regulatory policy, ASTM and CEN-CENELEC standards work, international compliance, applied formulation science |
+| `/research` | Eleven DOI-registered papers and one book, with the SSRN and Zenodo listings |
+| `/patents` | Seven provisional patents filed pro se, with serial numbers and dates |
+| `/ecosystem` | What gets built on ExecLayer: the execution kernel, the governed skill supply chain, the credentialing directory, the measurement instruments |
+| `/evidence` | Primary sources for the claims made elsewhere: press, standards committees, DOIs, federal registration |
+| `/philosophy` | The five operating principles behind the engineering |
+
+Claims on these pages are meant to be checkable. Where a page asserts a paper,
+a filing, or a standards seat, `/evidence` is where the primary source for it
+lives.
+
+## How it is built
+
+Next.js 16 (App Router) and React 19 on Tailwind 4, TypeScript throughout,
+deployed on Vercel. Playfair Display and Inter, self-hosted through
+`next/font`.
+
+Nearly all page copy lives in `src/lib/siteData.ts`. The pages under
+`src/app/` are thin renderers over it, so a content change is almost always an
+edit to that one file rather than to a component. Structured data is emitted
+from `src/components/JsonLd.tsx`.
+
+`public/llms.txt` summarizes the site for crawlers. It is written by hand and
+does not derive from `siteData.ts`, so it goes stale first. Update it whenever
+a paper, a filing, or a headline count changes.
+
+## Maintaining it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev     # http://localhost:3000
+pnpm lint
+pnpm build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+There is no test suite. Verification is `pnpm lint` and `pnpm build`, plus
+reading the rendered HTML under `.next/server/app/` when a content or metadata
+change needs confirming.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+pnpm dependency `overrides` belong in `pnpm-workspace.yaml` and nowhere else.
+Declaring them in `package.json` as well makes the two disagree, which breaks
+the frozen install Vercel runs and can quietly weaken the pinned versions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Merging to `main` deploys to production.
