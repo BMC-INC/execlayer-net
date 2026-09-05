@@ -3,5 +3,6 @@ ignoredBuiltDependencies:
   - unrs-resolver
 
 overrides:
-  js-yaml: '>=4.2.0'
-  postcss: '>=8.5.10'
+  postcss: '>=8.5.23'
+  js-yaml: '>=5.2.2'
+  brace-expansion@<2.0.0: '1.1.18'
