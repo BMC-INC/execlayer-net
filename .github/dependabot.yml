@@ -8,3 +8,29 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+
+    # Every PR here opens a Vercel preview deployment, so ungrouped weekly
+    # updates cost up to ten builds a week. These groups collapse the routine
+    # ones into two.
+    #
+    # Production and development stay apart on purpose. A dev-only bump
+    # (eslint, tailwind tooling, @types) cannot change what ships to
+    # execlayer.net, so its group can be merged on a green build alone. The
+    # production group is the one that can break the live site, and keeping it
+    # small and separate means a red build points at a handful of runtime
+    # packages rather than the whole week's noise.
+    #
+    # Neither group sets applies-to, so both cover version updates only.
+    # Security updates stay one PR per advisory, which is the point: a fix
+    # should never wait behind an unrelated bump that happens to fail.
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
