@@ -5,12 +5,17 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  postcss: '>=8.5.23'
-  js-yaml: '>=5.2.2'
   brace-expansion@<2.0.0: 1.1.21
   brace-expansion@>=4.0.0 <5.0.12: 5.0.12
-  source-map-js@<1.2.2: 1.2.2
+  js-yaml: '>=5.2.2'
+  postcss: '>=8.5.23'
   sharp@<0.35.5: 0.35.5
+  source-map-js@<1.2.2: 1.2.2
+
+patchedDependencies:
+  braces@3.0.3:
+    hash: 2cc84755f8872035970a9a89b3d9109ec4145289fafd390ae6d439b1f962bff8
+    path: patches/braces@3.0.3.patch
 
 importers:
 
@@ -2812,7 +2817,7 @@ snapshots:
     dependencies:
       balanced-match: 4.0.4
 
-  braces@3.0.3:
+  braces@3.0.3(patch_hash=2cc84755f8872035970a9a89b3d9109ec4145289fafd390ae6d439b1f962bff8):
     dependencies:
       fill-range: 7.1.1
 
@@ -3663,7 +3668,7 @@ snapshots:
 
   micromatch@4.0.8:
     dependencies:
-      braces: 3.0.3
+      braces: 3.0.3(patch_hash=2cc84755f8872035970a9a89b3d9109ec4145289fafd390ae6d439b1f962bff8)
       picomatch: 2.3.2
 
   minimatch@10.2.6:

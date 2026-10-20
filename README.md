@@ -54,12 +54,13 @@ pnpm build
 pnpm audit --prod
 ```
 
-There is no test suite. Verification is `pnpm lint` and `pnpm build`, plus
-reading the rendered HTML under `.next/server/app/` when a content or metadata
-change needs confirming.
+`pnpm build` runs the focused dependency security tests before building Next.js.
+Run those tests independently with `pnpm test:security`. Verification also
+includes `pnpm lint` and reading the rendered HTML under `.next/server/app/`
+when a content or metadata change needs confirming.
 
-Review the full `pnpm audit` as well. The remaining development-only braces
-advisory, its reachability assessment, and the review deadline are recorded in
+Review the full `pnpm audit` as well. The development-only braces advisory,
+its committed local mitigation, and the upstream review deadline are recorded in
 [`docs/dependency-security.md`](docs/dependency-security.md).
 
 pnpm dependency `overrides` belong in `pnpm-workspace.yaml` and nowhere else.
