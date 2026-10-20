@@ -20,11 +20,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "James Benton, Founder of ExecLayer",
+    default: "James Benton | Founder, CEO & Chief Architect",
     template: "%s | James Benton",
   },
   description:
-    "I build deterministic runtime control infrastructure for AI systems. Founder of ExecLayer. Eleven papers, seven patents filed pro se, and standards seats at ASTM and CEN-CENELEC.",
+    "Founder, CEO & Chief Architect of ExecLayer. Products, AI governance research, physical engineering, and experience building regulated operations.",
   metadataBase: new URL("https://execlayer.net"),
   verification: { google: "googlec016a09ca616f3e4" },
   robots: { index: true, follow: true },
@@ -33,20 +33,24 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://execlayer.net",
     siteName: "James Benton",
-    title: "James Benton, Founder of ExecLayer",
+    title: "James Benton | Founder, CEO & Chief Architect",
     description:
-      "I build deterministic runtime control infrastructure for AI systems. Founder of ExecLayer. Eleven papers, seven patents filed pro se, and standards seats at ASTM and CEN-CENELEC.",
+      "Founder, CEO & Chief Architect of ExecLayer. Products, AI governance research, physical engineering, and experience building regulated operations.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "James Benton, Founder of ExecLayer",
+    title: "James Benton | Founder, CEO & Chief Architect",
     description:
-      "I build deterministic runtime control infrastructure for AI systems. Founder of ExecLayer. Eleven papers, seven patents filed pro se, and standards seats at ASTM and CEN-CENELEC.",
+      "Founder, CEO & Chief Architect of ExecLayer. Products, AI governance research, physical engineering, and experience building regulated operations.",
   },
   alternates: { canonical: "https://execlayer.net" },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="bg-[var(--color-bg)] text-[var(--color-foreground)] font-[family-name:var(--font-body)] antialiased min-h-screen flex flex-col">
@@ -55,11 +59,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "ExecLayer",
-            url: "https://execlayer.net",
+            url: "https://www.execlayer.io",
             founder: {
               "@type": "Person",
               name: "James Benton",
-              jobTitle: "Founder, ExecLayer",
+              jobTitle: "Founder, CEO & Chief Architect, ExecLayer",
             },
           }}
         />

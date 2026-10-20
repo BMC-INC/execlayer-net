@@ -1,3 +1,5 @@
+import { ResumeLink } from "@/components/ResumeLink";
+
 export function Footer() {
   return (
     <footer className="border-t border-[var(--color-border)] py-8">
@@ -11,6 +13,9 @@ export function Footer() {
         >
           ExecLayer
         </a>
+        <div className="mt-4">
+          <ResumeLink />
+        </div>
       </div>
     </footer>
   );

@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/record", label: "Record" },
+  { href: "/work", label: "Work & Impact" },
   { href: "/research", label: "Research" },
   { href: "/patents", label: "Patents" },
   { href: "/ecosystem", label: "Ecosystem" },
@@ -25,6 +25,7 @@ export function Navbar() {
             <Link
               key={href}
               href={href}
+              aria-current={isActive ? "page" : undefined}
               className={`text-sm transition-colors ${
                 isActive
                   ? "text-[var(--color-foreground)]"

@@ -1,8 +1,10 @@
-# James Benton, Founder of ExecLayer
+# James Benton, Founder, CEO & Chief Architect of ExecLayer
 > Preferred summary for LLM crawlers and answer engines.
 
 ## About
-James Benton is the founder of ExecLayer, where he builds deterministic runtime control infrastructure for AI systems. He came up through regulated industries: healthcare operations leading 200+ person teams across convalescent hospitals and psychiatric wards, regulated manufacturing, international compliance, and standards committees. He held those operations roles as a third-party contractor, accountable for compliance inside facilities he did not own. Cal/OSHA 30 certified. Based in Monterey, California.
+James Benton is Founder, CEO & Chief Architect of ExecLayer, based in Monterey County, California. He builds AI infrastructure, products, and physical prototypes, drawing on healthcare operations, regulated manufacturing, technical staffing, international supply work, CAD, CNC machining, and additive manufacturing. He built and leads a six-person ExecLayer team. His career record reports 200+ employees led across three healthcare facilities, approximately 15% lower operating spending, seven injury-free years, and 12 inspections without deficiencies. QueueFlow Sentinel has paying customers. These operating results are founder-reported.
+
+Contact: james@execlayer.io. The site is a professional introduction for clients, partners, and investors. A separate two-page public résumé provides career chronology at https://execlayer.net/James-Benton-Resume.pdf.
 
 ## Standards
 - ASTM committee member (D37, F45)
@@ -10,7 +12,7 @@ James Benton is the founder of ExecLayer, where he builds deterministic runtime 
 - ISO/IEC JTC 1/SC 42, observer via UNE
 
 ## Intellectual Property
-Seven U.S. provisional patents, all filed pro se as a micro entity:
+Seven U.S. provisional patent applications reported in the filing record:
 - 63/901,870 (Filed October 20, 2025): PartsGenie AI
 - 63/952,140 (Filed December 31, 2025): GenOps / Blueprint Protocol
 - 63/983,308 (Filed February 14, 2026): DetGate, deterministic execution-bound governance gating
@@ -49,25 +51,35 @@ Portfolio through-line: deterministic gating, schema-based authority evaluation,
 - Author page: https://www.amazon.com/author/jamesbentonjr
 
 ## Ecosystem
-- ExecLayer (execlayer.io): company and doctrine layer
-- SovereignClaw (sovereignclaw.com): deterministic execution kernel in Rust, 1,245+ tests across 32 crates
-- SovereignGate: XRPL-native governance enforcement, six-crate Rust workspace, 253 tests
-- Agent Clawbrary: governed skill supply chain
-- SovereignPrompt: MCP-native prompt optimization engine, open source
-- ExecLayer Kernel V4 (github.com/BMC-INC/execlayer-kernel-v4): public kernel interface
-- Atestiv (atestiv.com): AI agent governance credentialing directory
-- QueueFlow Sentinel: launched on the Amazon Ring app platform as a named launch partner (TechCrunch, March 2026)
-- IronMem (github.com/BMC-INC/Iron-Mem): Rust-based AI context persistence, open source
-- AGB and OHB: published governance measurement instruments
-- DetGate: deterministic governance gate with Fact Origin Attestation Validator
+- SovereignClaw (sovereignclaw.com): Rust agent runtime; policy and authority checks on integrated execution paths. Operator OS review receipts use dual Ed25519 and SLH-DSA-SHA2-256f signing as of October 2026.
+- Kernel V4 (kernel.execlayer.io): separate Node.js/JavaScript authorization service with signed evidence, authority limits, and verifiable receipts.
+- Authority Assessment (assessment.execlayer.io): static source analysis, Authority Map, reports, and recommended control boundaries. Enforcement integration is separate.
+- QueueFlow Sentinel (queueflow.tech): shipped Ring Appstore product; device-event policies and notifications. Paying customers are founder-reported.
+- Operator OS: operating workspace, orchestration, typed connectors, memory, jobs, approvals, and run evidence; active development.
+- Corpus (corpus-seven.vercel.app): interactive Human, Humanoid, and Transhuman reference atlas and private research workspace. Educational Human reference; evidence provenance is retained.
+- Clearance City (clearancecity.app): playable governance game with browser and offline desktop editions.
+- IronMem (github.com/BMC-INC/Iron-mem): Apache-2.0 Rust memory system with MCP, REST, CLI, source-backed recall, policy gates, diagnostics, and recovery.
+- Coding Ledger (github.com/BMC-INC/coding-ledger): source-available under Elastic License 2.0; local AI usage tied to commits and merged PRs. API-equivalent estimates are distinct from actual spending.
+- SovereignPrompt (github.com/BMC-INC/Sovereign-Prompt): MIT-licensed Rust prompt-analysis and optimization tooling.
+- exfetch (github.com/BMC-INC/exfetch): browser-aware Rust web-access tooling; public source.
+- SovereignGate (sovereigngate.io): policy evaluation and required governance co-signing for configured XRPL transactions.
+- Agent Clawbrary / Atestiv (atestiv.com): skill evaluation, signed receipts, bundle distribution, and public directory.
+- AGB, OHB, MGIB: three published authored measurement instruments. A self-assessment is not independent certification.
+- DetGate: enforcement mechanism within the governance architecture.
+- CampGuard: physical edge-AI prototype; field validation remains in progress.
+- PartsGenie AI: voice-first automotive parts workflow in development.
+
+## Further Research
+- AAB / EAAC-1: implemented scripted control-plane benchmark; pre-release, with public release and publication separate.
+- The Zenodo community currently lists eight public records: a four-paper foundational archive and seven standalone papers. https://zenodo.org/communities/execlayer/records
 
 ## Primary Pages
 - https://execlayer.net/ : founder profile
-- https://execlayer.net/record : career record
+- https://execlayer.net/work : founder body of work, operating results, engineering, research, and recognition; /record redirects here
 - https://execlayer.net/research : published research
 - https://execlayer.net/patents : patent portfolio
 - https://execlayer.net/ecosystem : operating ecosystem
-- https://execlayer.net/evidence : external references
+- https://execlayer.net/evidence : independent coverage, company announcements, research, directories, standards, and program participation, labeled separately
 - https://execlayer.net/philosophy : operating principles
 
 ## Cross-References

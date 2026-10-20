@@ -16,9 +16,9 @@ content is not offered for reuse.
 | Page | What it holds |
 |---|---|
 | `/` | Who James is, and the short version of the work |
-| `/record` | The professional record: healthcare operations, regulatory policy, ASTM and CEN-CENELEC standards work, international compliance, applied formulation science |
-| `/research` | Eleven DOI-registered papers and one book, with the SSRN and Zenodo listings |
-| `/patents` | Seven provisional patents filed pro se, with serial numbers and dates |
+| `/work` | Founder’s body of work: companies, products, research, physical engineering, operating results, and recognition. `/record` permanently redirects here. |
+| `/research` | Eleven published papers, three published benchmarks, books, and separately labeled further research |
+| `/patents` | Seven provisional patent applications, with serial numbers and dates |
 | `/ecosystem` | What gets built on ExecLayer: the execution kernel, the governed skill supply chain, the credentialing directory, the measurement instruments |
 | `/evidence` | Primary sources for the claims made elsewhere: press, standards committees, DOIs, federal registration |
 | `/philosophy` | The five operating principles behind the engineering |
@@ -41,6 +41,8 @@ from `src/components/JsonLd.tsx`.
 `public/llms.txt` summarizes the site for crawlers. It is written by hand and
 does not derive from `siteData.ts`, so it goes stale first. Update it whenever
 a paper, a filing, or a headline count changes.
+
+The downloadable résumé is `public/James-Benton-Resume.pdf`, converted from `docs/James-Benton-Resume.docx`. This is James’s supplied two-page résumé with only his phone number and its adjacent separator removed. Preserve the original headline, wording, email addresses, links, budget reference, sections, and formatting; do not rewrite or condense it.
 
 ## Maintaining it
 

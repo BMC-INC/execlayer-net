@@ -5,7 +5,8 @@ import {
   researchSeries,
   latestWhitePaper,
   latestPapers,
-  book,
+  books,
+  founder,
   ssrnPublication,
   foundationalArchive,
   researchRecognition,
@@ -14,12 +15,12 @@ import {
 export const metadata: Metadata = {
   title: "Research",
   description:
-    "DOI-registered research on deterministic runtime enforcement, governed execution, and AI governance benchmarks. Eleven papers, one book.",
+    "James Benton’s three books, eleven published papers, governance benchmarks, and further research on AI execution authority.",
   alternates: { canonical: "https://execlayer.net/research" },
   openGraph: {
     title: "Research | James Benton",
     description:
-      "DOI-registered research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Eleven papers, one book.",
+      "James Benton’s three books, eleven published papers, governance benchmarks, and further research on AI execution authority.",
     url: "https://execlayer.net/research",
     type: "website",
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Research | James Benton",
     description:
-      "DOI-registered research on deterministic runtime enforcement, governance benchmarks, and AI governance infrastructure. Eleven papers, one book.",
+      "James Benton’s three books, eleven published papers, governance benchmarks, and further research on AI execution authority.",
   },
 };
 
@@ -40,8 +41,15 @@ export default function ResearchPage() {
 
       <p className="text-[var(--color-muted)] text-lg leading-relaxed mb-14">
         I publish the thinking behind ExecLayer instead of keeping it in a pitch
-        deck. Everything below is DOI-registered or SSRN-distributed. Read it,
-        cite it, or try to break it.
+        deck. The published collection contains four foundational papers and
+        seven standalone papers, with DOI records and SSRN distribution. Further
+        benchmark research is listed separately with its current status.
+      </p>
+
+      <p className="mb-10">
+        <ExternalLink href="https://zenodo.org/communities/execlayer/records">
+          Browse the complete Zenodo publication community →
+        </ExternalLink>
       </p>
 
       <section className="mb-14" aria-labelledby="recognition-heading">
@@ -52,9 +60,7 @@ export default function ResearchPage() {
           Recognition
         </h2>
         <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6">
-          <p className="text-sm text-[var(--color-accent)] mb-1">
-            August 2026
-          </p>
+          <p className="text-sm text-[var(--color-accent)] mb-1">August 2026</p>
           <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
             {researchRecognition.title}
           </h3>
@@ -86,9 +92,12 @@ export default function ResearchPage() {
               <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
                 {paper.title}
               </h3>
-              <p className="text-[var(--color-muted)] text-sm">
+              <p className="text-[var(--color-muted)] text-sm mb-3">
                 {paper.summary}
               </p>
+              <ExternalLink href={foundationalArchive.versionDoi}>
+                Read in the foundational archive
+              </ExternalLink>
             </div>
           ))}
         </div>
@@ -131,31 +140,85 @@ export default function ResearchPage() {
                 {paper.summary}
               </p>
               <p className="text-sm">
-                <ExternalLink href={paper.href}>
-                  DOI: {paper.doi}
-                </ExternalLink>
+                <ExternalLink href={paper.href}>DOI: {paper.doi}</ExternalLink>
+                {paper.ssrnHref && (
+                  <>
+                    {" "}
+                    ·{" "}
+                    <ExternalLink href={paper.ssrnHref}>
+                      SSRN record
+                    </ExternalLink>
+                  </>
+                )}
               </p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Book */}
-      <section className="mb-14">
-        <h2 className="font-[family-name:var(--font-display)] text-xl mb-6 text-[var(--color-foreground)]">
-          Book
+      <section className="mb-14" aria-labelledby="further-research-heading">
+        <h2
+          id="further-research-heading"
+          className="font-[family-name:var(--font-display)] text-xl mb-6"
+        >
+          Further benchmark research
         </h2>
-        <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6">
-          <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
-            {book.title}
-          </h3>
-          <p className="text-[var(--color-muted)] text-sm mb-3">
-            {book.summary}
-          </p>
-          <p className="text-sm text-[var(--color-muted)]">
-            ISBN {book.isbn}. Published by {book.publisher}.
-          </p>
+        <div className="space-y-6 text-[var(--color-muted)] leading-relaxed">
+          <article>
+            <h3 className="text-lg text-[var(--color-foreground)] mb-2">
+              Agent Authority Benchmark (AAB / EAAC-1)
+            </h3>
+            <p className="text-xs text-[var(--color-accent)] mb-2">
+              Implemented research instrument · pre-release · October 2026
+            </p>
+            <p>
+              Evaluates whether an agent control plane prevents prohibited
+              execution, preserves human approval authority, and emits evidence
+              that can be reconciled with observed actions. The implemented
+              challenge uses scripted adversaries and a simulated world. Its
+              recorded build status separates implementation from public release
+              and publication.
+            </p>
+          </article>
         </div>
+      </section>
+
+      <section
+        id="books"
+        className="mb-14 scroll-mt-8"
+        aria-labelledby="books-heading"
+      >
+        <h2
+          id="books-heading"
+          className="font-[family-name:var(--font-display)] text-xl mb-6 text-[var(--color-foreground)]"
+        >
+          Books
+        </h2>
+        <div className="space-y-4">
+          {books.map((entry) => (
+            <article
+              key={entry.title}
+              className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6"
+            >
+              <h3 className="font-[family-name:var(--font-display)] text-lg mb-2">
+                {entry.title}
+              </h3>
+              <p className="text-[var(--color-muted)] text-sm">
+                {entry.summary}
+              </p>
+              {entry.isbn && (
+                <p className="mt-3 text-sm text-[var(--color-muted)]">
+                  ISBN {entry.isbn}. Published by {entry.publisher}.
+                </p>
+              )}
+            </article>
+          ))}
+        </div>
+        <p className="mt-6">
+          <ExternalLink href={founder.amazon}>
+            View all three books on Amazon
+          </ExternalLink>
+        </p>
       </section>
 
       {/* Archive metadata */}
@@ -212,12 +275,13 @@ export default function ResearchPage() {
             "@context": "https://schema.org",
             "@type": "ScholarlyArticle",
             name: paper.title,
+            url: foundationalArchive.versionDoi,
             author: { "@type": "Person", name: "James Benton" },
             publisher: {
               "@type": "Organization",
               name: "ExecLayer Inc.",
             },
-            datePublished: "2026-03",
+            datePublished: "2026-02-08",
           }}
         />
       ))}
@@ -253,19 +317,26 @@ export default function ResearchPage() {
           }}
         />
       ))}
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "Book",
-          name: book.title,
-          isbn: book.isbn,
-          author: { "@type": "Person", name: "James Benton" },
-          publisher: {
-            "@type": "Organization",
-            name: book.publisher,
-          },
-        }}
-      />
+      {books.map((entry) => (
+        <JsonLd
+          key={entry.title}
+          data={{
+            "@context": "https://schema.org",
+            "@type": "Book",
+            name: entry.title,
+            description: entry.summary,
+            isbn: entry.isbn,
+            url: founder.amazon,
+            author: { "@type": "Person", name: "James Benton" },
+            publisher: entry.publisher
+              ? {
+                  "@type": "Organization",
+                  name: entry.publisher,
+                }
+              : undefined,
+          }}
+        />
+      ))}
       <JsonLd
         data={{
           "@context": "https://schema.org",
