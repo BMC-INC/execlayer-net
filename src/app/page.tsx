@@ -124,9 +124,9 @@ export default function Home() {
           Research that informs the engineering
         </h2>
         <p className="text-[var(--color-muted)] leading-relaxed mb-4">
-          I publish the architecture behind the work: eleven papers covering
+          I publish the architecture behind the work: twelve papers covering
           execution authority, financial transactions, neural interfaces,
-          autonomous space systems, and the AGB, OHB, and MGIB governance
+          autonomous space systems, and the AGB, OHB, MGIB, and ELIB governance
           benchmarks. I have also filed seven provisional patent applications.
         </p>
         <p className="text-[var(--color-muted)] leading-relaxed mb-4">

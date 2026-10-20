@@ -130,6 +130,16 @@ export const latestPapers = [
     href: "https://doi.org/10.5281/zenodo.21856219",
     datePublished: "2026-08",
   },
+  {
+    label: "ELIB · Preprint v0.2 · October 20, 2026",
+    title:
+      "Embodied Lesson Integrity Benchmark (ELIB): Measuring Lesson Authority Under Physical Drift",
+    summary:
+      "Measures whether a stored lesson remains justified in influencing an action when physical conditions change. The fourth instrument in the ExecLayer Governance Suite, alongside AGB, OHB, and MGIB. The public whitepaper and protocol supplement describe diagnostic calibration in analytical simulation; hardware validation and independent-system replication remain future work. Implementation and evaluator keys remain private.",
+    doi: "10.5281/zenodo.23516698",
+    href: "https://zenodo.org/records/23516698",
+    datePublished: "2026-10-20",
+  },
 ];
 
 export const ssrnPublication = {
@@ -379,11 +389,11 @@ export const ecosystemProjects: EcosystemProject[] = [
   {
     id: "benchmarks",
     group: "Skills and measurement",
-    label: "Three published measurement instruments",
-    title: "AGB, OHB, and MGIB",
+    label: "Four published measurement instruments",
+    title: "AGB, OHB, MGIB, and ELIB",
     status: "Published research",
     summary:
-      "AGB examines runtime governance enforcement. OHB examines the continued quality of human oversight. MGIB examines whether persistent memory changes execution authority. These are authored measurement instruments; a published DOI or a self-assessment does not constitute independent certification.",
+      "AGB examines runtime governance enforcement. OHB examines the continued quality of human oversight. MGIB examines whether persistent memory changes execution authority. ELIB examines whether stored lessons retain justified authority under physical change, with diagnostic calibration in analytical simulation. These are authored measurement instruments; a published DOI or a self-assessment does not constitute independent certification.",
     links: [
       {
         label: "AGB",
@@ -396,6 +406,10 @@ export const ecosystemProjects: EcosystemProject[] = [
       {
         label: "MGIB",
         href: "https://doi.org/10.5281/zenodo.21856219",
+      },
+      {
+        label: "ELIB",
+        href: "https://zenodo.org/records/23516698",
       },
     ],
   },
@@ -445,8 +459,15 @@ export const evidenceLinks: EvidenceLink[] = [
     category: "Published research and public source",
     title: "Zenodo publication community",
     description:
-      "Eight public records: the foundational four-paper archive and seven standalone papers. Includes AGB, OHB, and MGIB. The records preserve publication versions and DOIs; hosting is distinct from peer review.",
+      "The foundational four-paper archive and individually published research, including AGB, OHB, and MGIB. The records preserve publication versions and DOIs; hosting is distinct from peer review.",
     href: "https://zenodo.org/communities/execlayer/records",
+  },
+  {
+    category: "Published research and public source",
+    title: "ELIB v0.2 preprint and protocol supplement",
+    description:
+      "Published October 20, 2026. Embodied Lesson Integrity Benchmark examines lesson authority under physical drift. The record distinguishes diagnostic calibration in analytical simulation from future hardware validation and independent-system replication. Benchmark implementation and evaluator keys remain private.",
+    href: "https://zenodo.org/records/23516698",
   },
   {
     category: "Published research and public source",

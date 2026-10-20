@@ -209,12 +209,15 @@ export default function WorkPage() {
           Research, standards, and intellectual property
         </h2>
         <p className="text-[var(--color-muted)] leading-relaxed">
-          The published research comprises four foundational papers and seven
+          The published research comprises four foundational papers and eight
           standalone papers. It covers runtime enforcement, execution doctrine,
           governed artifacts, emotional-signal calibration, distributed-ledger
           transactions, neural interfaces, and autonomous space systems. The
-          AGB, OHB, and MGIB instruments examine runtime governance, meaningful
-          human oversight, and memory-mediated authority failures.
+          AGB, OHB, MGIB, and ELIB instruments examine runtime governance,
+          meaningful human oversight, memory-mediated authority failures, and
+          whether stored lessons retain justified authority under physical change.
+          ELIB’s version 0.2 preprint reports diagnostic calibration in analytical
+          simulation, with hardware and independent-system validation still ahead.
         </p>
         <p className="text-[var(--color-muted)] leading-relaxed">
           I have filed seven provisional patent applications, from voice-driven

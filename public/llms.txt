@@ -35,6 +35,7 @@ Portfolio through-line: deterministic gating, schema-based authority evaluation,
 - Paper IX: The Missing Control Boundary, deterministic governance for brain-computer interfaces and cognitive-write systems (DOI: 10.5281/zenodo.20952564)
 - Paper X: Deterministic Execution Authority for Autonomous Space Systems, governance for orbital platforms under the Outer Space Treaty (DOI: 10.5281/zenodo.20956531)
 - Paper XI: Memory Governance Integrity Benchmark, MGIB, memory-mediated authority failures (DOI: 10.5281/zenodo.21856219)
+- Embodied Lesson Integrity Benchmark (ELIB): Measuring Lesson Authority Under Physical Drift. Preprint v0.2, published October 20, 2026 (DOI: 10.5281/zenodo.23516698). https://zenodo.org/records/23516698 . Whitepaper and protocol supplement are public; implementation and evaluator keys remain private. Reported analytical-simulation runs are diagnostic calibration, not hardware validation or independent-system replication.
 - Archive version DOI: 10.5281/zenodo.18749299 (v1.0.2)
 - Archive concept DOI: 10.5281/zenodo.18521538
 - SSRN Abstract 6290760, distributed April 8, 2026
@@ -64,14 +65,14 @@ Portfolio through-line: deterministic gating, schema-based authority evaluation,
 - exfetch (github.com/BMC-INC/exfetch): browser-aware Rust web-access tooling; public source.
 - SovereignGate (sovereigngate.io): policy evaluation and required governance co-signing for configured XRPL transactions.
 - Agent Clawbrary / Atestiv (atestiv.com): skill evaluation, signed receipts, bundle distribution, and public directory.
-- AGB, OHB, MGIB: three published authored measurement instruments. A self-assessment is not independent certification.
+- AGB, OHB, MGIB, ELIB: four published authored measurement instruments. ELIB measures whether stored lessons retain justified authority under physical change. Its v0.2 preprint reports analytical-simulation calibration. A self-assessment is not independent certification.
 - DetGate: enforcement mechanism within the governance architecture.
 - CampGuard: physical edge-AI prototype; field validation remains in progress.
 - PartsGenie AI: voice-first automotive parts workflow in development.
 
 ## Further Research
 - AAB / EAAC-1: implemented scripted control-plane benchmark; pre-release, with public release and publication separate.
-- The Zenodo community currently lists eight public records: a four-paper foundational archive and seven standalone papers. https://zenodo.org/communities/execlayer/records
+- Zenodo publication community: https://zenodo.org/communities/execlayer/records . The published collection comprises a four-paper foundational archive and eight standalone papers, including the ELIB preprint at https://zenodo.org/records/23516698 .
 
 ## Primary Pages
 - https://execlayer.net/ : founder profile

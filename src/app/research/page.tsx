@@ -15,12 +15,12 @@ import {
 export const metadata: Metadata = {
   title: "Research",
   description:
-    "James Benton’s three books, eleven published papers, governance benchmarks, and further research on AI execution authority.",
+    "James Benton’s three books, twelve published papers, four governance benchmarks, and further research on AI execution authority.",
   alternates: { canonical: "https://execlayer.net/research" },
   openGraph: {
     title: "Research | James Benton",
     description:
-      "James Benton’s three books, eleven published papers, governance benchmarks, and further research on AI execution authority.",
+      "James Benton’s three books, twelve published papers, four governance benchmarks, and further research on AI execution authority.",
     url: "https://execlayer.net/research",
     type: "website",
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Research | James Benton",
     description:
-      "James Benton’s three books, eleven published papers, governance benchmarks, and further research on AI execution authority.",
+      "James Benton’s three books, twelve published papers, four governance benchmarks, and further research on AI execution authority.",
   },
 };
 
@@ -42,8 +42,10 @@ export default function ResearchPage() {
       <p className="text-[var(--color-muted)] text-lg leading-relaxed mb-14">
         I publish the thinking behind ExecLayer instead of keeping it in a pitch
         deck. The published collection contains four foundational papers and
-        seven standalone papers, with DOI records and SSRN distribution. Further
-        benchmark research is listed separately with its current status.
+        eight standalone papers, with DOI records and SSRN distribution. ELIB
+        joins AGB, OHB, and MGIB as the fourth governance instrument, published
+        as a version 0.2 preprint. Further benchmark research is listed separately
+        with its current status.
       </p>
 
       <p className="mb-10">

@@ -17,7 +17,7 @@ content is not offered for reuse.
 |---|---|
 | `/` | Who James is, and the short version of the work |
 | `/work` | Founder’s body of work: companies, products, research, physical engineering, operating results, and recognition. `/record` permanently redirects here. |
-| `/research` | Eleven published papers, three published benchmarks, books, and separately labeled further research |
+| `/research` | Twelve published papers, four published benchmarks (including the ELIB v0.2 preprint), books, and separately labeled further research |
 | `/patents` | Seven provisional patent applications, with serial numbers and dates |
 | `/ecosystem` | What gets built on ExecLayer: the execution kernel, the governed skill supply chain, the credentialing directory, the measurement instruments |
 | `/evidence` | Primary sources for the claims made elsewhere: press, standards committees, DOIs, federal registration |
@@ -51,11 +51,16 @@ pnpm install
 pnpm dev     # http://localhost:3000
 pnpm lint
 pnpm build
+pnpm audit --prod
 ```
 
 There is no test suite. Verification is `pnpm lint` and `pnpm build`, plus
 reading the rendered HTML under `.next/server/app/` when a content or metadata
 change needs confirming.
+
+Review the full `pnpm audit` as well. The remaining development-only braces
+advisory, its reachability assessment, and the review deadline are recorded in
+[`docs/dependency-security.md`](docs/dependency-security.md).
 
 pnpm dependency `overrides` belong in `pnpm-workspace.yaml` and nowhere else.
 Declaring them in `package.json` as well makes the two disagree, which breaks
