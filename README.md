@@ -1,15 +1,17 @@
-# execlayer.net
+# ExecLayer · Founder, Products & Research
 
 The personal site of James Benton, founder of ExecLayer, published at
 **[execlayer.net](https://execlayer.net)**.
 
-It is a biography and a public record: who he is, what he has built, what he
-has filed, and what he has published. The site is the thing. This repository is
-just where it is written and from where it deploys.
+The site connects the company's work, products, research, and supporting evidence
+in one public record. Investors, customers, and collaborators can explore the
+portfolio and follow primary sources behind its claims.
 
-**Read it at [execlayer.net](https://execlayer.net).** There is nothing here to
-install or download. It is not a template, a starter, or a product, and the
-content is not offered for reuse.
+**[Visit execlayer.net](https://execlayer.net)** · [Explore the work](https://execlayer.net/work) · [Read the research](https://execlayer.net/research) · [Review the evidence](https://execlayer.net/evidence)
+
+This repository contains the website source and maintenance instructions. Product
+implementations are maintained separately. The website content is not offered for
+reuse, and no repository-wide open-source license is included.
 
 ## What is on the site
 
@@ -46,8 +48,11 @@ The downloadable résumé is `public/James-Benton-Resume.pdf`, converted from `d
 
 ## Maintaining it
 
+Use Node.js 20.9 or later and pnpm **10.33.0**, the version declared in
+`package.json`. Clone the repository and run these commands from its root:
+
 ```bash
-pnpm install
+pnpm install --frozen-lockfile
 pnpm dev     # http://localhost:3000
 pnpm lint
 pnpm build
@@ -67,4 +72,6 @@ pnpm dependency `overrides` belong in `pnpm-workspace.yaml` and nowhere else.
 Declaring them in `package.json` as well makes the two disagree, which breaks
 the frozen install Vercel runs and can quietly weaken the pinned versions.
 
-Merging to `main` deploys to production.
+Merging to `main` deploys to production. For website defects or broken source
+links, [open an issue](https://github.com/BMC-INC/execlayer-net/issues) with the
+affected page and expected behavior.
